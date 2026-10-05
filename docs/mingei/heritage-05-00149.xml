@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.3" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">heritage</journal-id>
+      <journal-title-group>
+        <journal-title>Heritage</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Heritage</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Heritage</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2571-9408</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/heritage5040149</article-id>
+      <article-id pub-id-type="publisher-id">heritage-05-00149</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>InCulture: A Collaborative Platform for Intangible Cultural Heritage Narratives</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0001-6529-7456</contrib-id>
+          <name>
+            <surname>Mathioudakis</surname>
+            <given-names>Georgios</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+          <xref rid="c1-heritage-05-00149" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Klironomos</surname>
+            <given-names>Iosif</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-0497-7348</contrib-id>
+          <name>
+            <surname>Partarakis</surname>
+            <given-names>Nikolaos</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Papadaki</surname>
+            <given-names>Eleni</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Volakakis</surname>
+            <given-names>Konstantinos</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Anifantis</surname>
+            <given-names>Nikolaos</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-2667-2433</contrib-id>
+          <name>
+            <surname>Papageorgiou</surname>
+            <given-names>Ioannis</given-names>
+          </name>
+          <xref rid="af2-heritage-05-00149" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pavlidis</surname>
+            <given-names>Savvas Alexandros</given-names>
+          </name>
+          <xref rid="af2-heritage-05-00149" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Antona</surname>
+            <given-names>Margherita</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-3687-4220</contrib-id>
+          <name>
+            <surname>Stephanidis</surname>
+            <given-names>Constantine</given-names>
+          </name>
+          <xref rid="af1-heritage-05-00149" ref-type="aff">1</xref>
+          <xref rid="af3-heritage-05-00149" ref-type="aff">3</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Gallo</surname>
+            <given-names>Luigi</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-heritage-05-00149"><label>1</label>Foundation for Research and Technology Hellas, Institute of Computer Science, GR-70013 Heraklion, Greece</aff>
+      <aff id="af2-heritage-05-00149"><label>2</label>Rhodes Centre for History and Social Research, Chimarras Str. 27, GR-85133 Rhodes, Greece</aff>
+      <aff id="af3-heritage-05-00149"><label>3</label>Department of Computer Science, University of Crete, GR-70013 Heraklion, Greece</aff>
+      <author-notes>
+        <corresp id="c1-heritage-05-00149"><label>*</label>Correspondence: <email>gmathiou@ics.forth.gr</email>; Tel.: +30-281-139-2578</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>09</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>12</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>5</volume>
+      <issue>4</issue>
+      <fpage>2881</fpage>
+      <lpage>2903</lpage>
+      <history>
+        <date date-type="received">
+          <day>25</day>
+          <month>08</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>09</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2022 by the authors.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Intangible Culture Heritage (ICH) is defined as the collection of oral traditions and expressions such as epics, fairy tales, stories, arts, social practices, rituals and celebrations, events, knowledge, and practices related to nature and the universe, traditional medicine, folk medicine, traditional handcrafts, as well as personal experiences related to important historical events or cultural activities that shaped the historical and local identity. Under the UNESCO Convention for the Safeguarding of the ICH, nations are committed to developing inventories of ICH and working with local communities, groups, and individuals to preserve these traditions. In this paper, a platform is introduced that facilitates the collection of intangible ICH data, the formation of story-based narratives, and their presentation to the public via a web and mobile application, which offers Augmented Reality (AR) experiences. The platform aims to support the formation of user communities sharing common interests and to provide them with the appropriate tools for collecting pieces of ICH. Collected ICH resources and created narratives are modeled using semantic web technologies so that information can be perceived by third-party systems too. Furthermore, towards the dissemination of the platform, a real-world use case took place on the island of Rhodes focusing on the recent history of the island between 1912 and 1948 (WWII). The platform was implemented to support the goals of the project InCulture, funded by the EPAnEK Greek national co-funded operational program &#x201C;Competitiveness Entrepreneurship and Innovation&#x201D;.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>cultural heritage</kwd>
+        <kwd>Intangible Cultural Heritage</kwd>
+        <kwd>web-based narratives</kwd>
+        <kwd>web-based storytelling</kwd>
+        <kwd>Augmented Reality</kwd>
+        <kwd>semantic web</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>EPAnEK Greek national co-funded operational program &#x201C;Competitiveness Entrepreneurship and Innovation&#x201D;</funding-source>
+          <award-id>&#x3A4;1&#x395;&#x394;&#x39A;-03060</award-id>
+        </award-group>
+        <funding-statement>This research was conducted in the context of the InCulture project, funded by the EPAnEK Greek national co-funded operational program &#x201C;Competitiveness Entrepreneurship and Innovation&#x201D;.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1-heritage-05-00149" sec-type="intro">
+      <title>1. Introduction</title>
+      <p>According to UNESCO, the intangible dimension of Cultural Heritage (CH) includes traditions or living expressions inherited from our ancestors and passed on to our descendants, such as oral traditions, performing arts, social practices, rituals, festive events, knowledge, and practices concerning nature and the universe or the knowledge and skills to produce traditional crafts. While fragile, ICH is an important factor in maintaining cultural diversity in the face of growing globalization. An understanding of ICH in different communities helps with intercultural dialogue and encourages mutual respect for other ways of life [<xref ref-type="bibr" rid="B1-heritage-05-00149">1</xref>,<xref ref-type="bibr" rid="B2-heritage-05-00149">2</xref>]. </p>
+      <p>The approach presented in this paper addresses both the formation of story-based narratives through user communities and content exploration from the Web and/or on the go. To do so, an online platform [<xref ref-type="bibr" rid="B3-heritage-05-00149">3</xref>] is introduced as a result of the project, &#x201C;InCulture: Collection, representation and presentation of ICH&#x201D; [<xref ref-type="bibr" rid="B4-heritage-05-00149">4</xref>].</p>
+      <p>In this context, this research work introduces a new solution for collaborative authoring of story-based ICH narratives aiming to support the collection of pieces of information relevant to the recent history of the island of Rhodes (Greece). A representation model for ICH narratives is shaped to support the production of narratives that combine and correlate textual content with multimedia. The representation model is based on a CH domain standard, the CIDOC Conceptual Reference Model (CRM) [<xref ref-type="bibr" rid="B5-heritage-05-00149">5</xref>]. </p>
+      <p>Furthermore, InCulture unleashes the power of user communities by supporting their formation and offering collaborative features. Tools for resource capturing are also made available to facilitate content collection on the spot. The ICH information collected and narratives formed are made available through a web and a mobile application, offering AR experiences, by exploiting the location metadata of the available resources.</p>
+      <p>The combination of (i) easy-to-use tools for ICH resources collection via mobile devices, (ii) semantic web representation of collected data, (iii) real-time collaborative tools for authoring of narratives and (iv) novel user interfaces presenting the collected ICH content makes InCulture a unique solution for the ICH domain. InCulture aims to democratize ICH content crafting and access.</p>
+    </sec>
+    <sec id="sec2-heritage-05-00149">
+      <title>2. Related Work</title>
+      <p>According to the Oxford English Dictionary, a narrative is defined as &#x201C;an account of a series of events, facts, etc., given in order and with the establishing of connections between them.&#x201D; [<xref ref-type="bibr" rid="B6-heritage-05-00149">6</xref>]. The study of the concept of a narrative goes back to Aristotle [<xref ref-type="bibr" rid="B7-heritage-05-00149">7</xref>], further elaborated by many philosophers afterwards. A more systematic study of the narrative structure was conducted by Russian formalists [<xref ref-type="bibr" rid="B8-heritage-05-00149">8</xref>], giving rise to narratology.</p>
+      <sec id="sec2dot1-heritage-05-00149">
+        <title>2.1. Semantic Models for CH </title>
+        <p>Today, semantic web technologies are considered an integral part of digital CH [<xref ref-type="bibr" rid="B9-heritage-05-00149">9</xref>]. In this context, the pioneering work of Europeana stands out for making the representation of CH artifacts with semantic technologies possible [<xref ref-type="bibr" rid="B10-heritage-05-00149">10</xref>]. The evolution of such technologies can be considered to have occurred in three phases, as described below. </p>
+        <p>The first phase was rooted in knowledge classification approaches as applied to libraries and archives powering object-centric approaches such as MINERVA [<xref ref-type="bibr" rid="B11-heritage-05-00149">11</xref>] and Europeana Rhine [<xref ref-type="bibr" rid="B12-heritage-05-00149">12</xref>]. In this phase, Digital Libraries (DLs), especially in the Cultural Heritage domain, are considered to be rich in narratives, since every digital object in a DL tells some kind of story, regardless of the medium, the genre, or the type of object. However, in the first phase, DLs didn&#x2019;t offer services about narratives but rather only discovered functionalities over their contents, without regard for the narratives themselves [<xref ref-type="bibr" rid="B13-heritage-05-00149">13</xref>].</p>
+        <p>The second phase was empowered by the representation of events as proposed by CIDOC CRM [<xref ref-type="bibr" rid="B5-heritage-05-00149">5</xref>]. The CIDOC Conceptual Reference Model is standard used worldwide for the storage and codification of cultural information, providing a formal structure for common relationships and attributes regarded in cultural heritage documentation, such as the births of important figures and the constructions of monuments. An example of its manifestation was the integration of the basic &#x201C;Event&#x201D; class to the Europeana Data Model [<xref ref-type="bibr" rid="B10-heritage-05-00149">10</xref>]. The introduction of the class &#x201C;Event&#x201D; led to significant improvements, mainly for the obvious reason that it made possible the representation of events but also due to the inherited attribute of connecting these events with object-centric representations. With this breakthrough it was made possible to represent series of events, each one connected with instances that, when put together, can represent the backbone of a story. For example, a building acquisition transaction is an event happening sometime in the past. The factory is a manmade object linked with digital assets (e.g., photographic documentation of the building, 3D scans, etc.) designed by an architect (e.g., a person). Furthermore, the transaction has participants which are, for example, the owner and the buyer, and takes place in a specific location which is represented with geo-coordinates.</p>
+        <p>Recent work on the third phase focuses on the semantic representation of narratives [<xref ref-type="bibr" rid="B14-heritage-05-00149">14</xref>,<xref ref-type="bibr" rid="B15-heritage-05-00149">15</xref>] and has implemented such an ontology as an extension of three standard vocabularies, i.e., the CIDOC-CRM [<xref ref-type="bibr" rid="B5-heritage-05-00149">5</xref>], FRBRoo [<xref ref-type="bibr" rid="B16-heritage-05-00149">16</xref>], and OWL Time [<xref ref-type="bibr" rid="B17-heritage-05-00149">17</xref>], and using the SWRL [<xref ref-type="bibr" rid="B18-heritage-05-00149">18</xref>] rule language to express the axioms. Furthermore, the following contents of a narrative were defined by the Russian formalists [<xref ref-type="bibr" rid="B8-heritage-05-00149">8</xref>]: (a) the fabula representing the story itself as it happened, (b) the narrations, that represent one or more expressions of the fabula, and (c) the plot, which is the way that narration is narrated. This work was further extended to support the representation of the tangible and intangible dimensions of traditional crafts and their interconnection with the socio-historic context of the community practicing them [<xref ref-type="bibr" rid="B19-heritage-05-00149">19</xref>].</p>
+        <p>The work presented in this paper aspires to be part of the third phase by introducing narrative-centric representations. The work builds on the CIDOC CRM [<xref ref-type="bibr" rid="B5-heritage-05-00149">5</xref>] but simplifies the structure of a narrative, thus reducing the effort of narrative authoring in close relation to the production of an easy-to-use and intuitive web-based user interface.</p>
+      </sec>
+      <sec id="sec2dot2-heritage-05-00149">
+        <title>2.2. Participatory Narrative Authoring Systems</title>
+        <p>The importance of narratives for the representation and presentation of social and historic context has been recently identified. Since narratives are by themselves a manifestation of ICH, the earliest attempt for its representation online can be considered the i-Treasures web platform, which was an open and extendable platform providing access to intangible heritage data of different formats. Although i-Treasures did not work on the formalization of narratives, it offered different forms of disseminating ICH data such as MoCap of dance [<xref ref-type="bibr" rid="B20-heritage-05-00149">20</xref>]. </p>
+        <p>The Mingei Online Platform (MOP) is probably the latest attempt to support collaborative authoring from multiple knowledge curators of semantic descriptions on the socio-historic context, grouped together under the formalized description of a semantic narrative [<xref ref-type="bibr" rid="B21-heritage-05-00149">21</xref>,<xref ref-type="bibr" rid="B22-heritage-05-00149">22</xref>]. The MOP has been also recently extended to represent recipes expressed both as a process and as narratives [<xref ref-type="bibr" rid="B23-heritage-05-00149">23</xref>]. The formalization of the narrative itself is facilitated in MOP by previous research efforts in the domain, where the term of semantic narratives was introduced as a way of giving &#x201C;meaning&#x201D; to digital content [<xref ref-type="bibr" rid="B15-heritage-05-00149">15</xref>]. Furthermore, due to the evolution of the technical means for documenting cultural resources, various digital forms of information have been integrated to such systems, including multimodal digitization and online sources such as Wikidata [<xref ref-type="bibr" rid="B24-heritage-05-00149">24</xref>,<xref ref-type="bibr" rid="B25-heritage-05-00149">25</xref>], thus allowing data curators to enhance their representations through open linked data. The authoring process of the above-mentioned narratives has been systematized in the form of a step-by-step approach [<xref ref-type="bibr" rid="B26-heritage-05-00149">26</xref>]. Finally, recent approaches have expanded the applicability of narratives for CH objects and sites by supporting the collaborative authoring of narratives that could be narrated in conjunction with (a) the geographical context [<xref ref-type="bibr" rid="B27-heritage-05-00149">27</xref>,<xref ref-type="bibr" rid="B28-heritage-05-00149">28</xref>], (b) an artifact [<xref ref-type="bibr" rid="B29-heritage-05-00149">29</xref>], (c) a museum collection [<xref ref-type="bibr" rid="B30-heritage-05-00149">30</xref>,<xref ref-type="bibr" rid="B31-heritage-05-00149">31</xref>,<xref ref-type="bibr" rid="B32-heritage-05-00149">32</xref>], etc. Last but not least, to ensure compatibility with open linked data repositories, attempts have been made toward harmonizing the representation of narratives with open linked data repositories such as the Europeana [<xref ref-type="bibr" rid="B33-heritage-05-00149">33</xref>].</p>
+      </sec>
+      <sec id="sec2dot3-heritage-05-00149">
+        <title>2.3. Approach and Contribution</title>
+        <p>While several solutions exist that try to address ICH preservation through model representations, they fall short on engaging the end-users to participate actively in the collection of ICH resources and on the presentation of the available content. This work contributes a versatile solution that offers a unique combination of features for ICH resource collection, organization, preservation, presentation, and promotion. Specifically, the InCulture platform presented in this paper introduces a mobile application featuring multimedia resource capturing and uploading, towards enabling crowd-sourced collection of content via a mobile-friendly, easy-to-use way. Further, the platform facilitates the formation of user communities that share common interests in regards to ICH, and provides tools for collaborative authoring of story-based narratives. The authored narratives are presented both on a web interface as well as a mobile application that features location-based AR experiences for context-aware content exploration. Finally, the InCulture framework proposes a formal representation model, which is based on and extends the CIDOC CRM [<xref ref-type="bibr" rid="B5-heritage-05-00149">5</xref>], a well-established ontology for CH resources.</p>
+      </sec>
+    </sec>
+    <sec id="sec3-heritage-05-00149">
+      <title>3. User Requirements Specification</title>
+      <p>For this work, the elicitation of user requirements was achieved through a series of interviews and questionnaires of the target user groups. The respondents were asked to imagine a system/platform and what they would like from it, instead of evaluating an existing and tested one. Some of the concepts discussed during the requirements elicitation phase are listed below:<list list-type="bullet"><list-item><p>How is the term &#x201C;ICH&#x201D; perceived?</p></list-item><list-item><p>What forms of ICH resources would they expect to find and study on an online web platform?</p></list-item><list-item><p>When and in what ways is collaborative creation of resources and narratives better than individual contributions?</p></list-item><list-item><p>In what way should the available resources be offered and what tools do they imagine being provided to content creators?</p></list-item></list></p>
+      <p>The above-mentioned concepts were discussed during thirteen (13) structured, face-to-face interviews that took place in public areas with randomly selected individuals. In addition, fifty (50) individuals filled in an online questionnaire, which was promoted on social media pages. </p>
+      <p>The results from the interviews and questionnaires confirmed the interest of the public around ICH and pointed out the ICH categories about which the users would be most interested to read or most willing to contribute content, such as (i) personal stories and local history, (ii) local traditions, (iii) local gastronomy, (iv) festivities, and more. In regard to collaborative authoring, the results revealed that users prefer working in user groups (81%) instead of working alone (19%). Moreover, interviewees specified that users within a collaborative group could provide supplementary material (42%), validate the content (30%), exchange ideas (19%), or just distribute the work (9%). </p>
+      <p>In regard to content creation, results showed that creators would expect such a platform to automatically generate metadata from provided content (e.g., geographic location), accommodate custom tags for content, feature a spellchecker for textual content, provide sharing functionality for social media, refer to external or internal sources, and more. The results also revealed that users would feel more comfortable with contributing if a moderation policy was enforced before the content was published.</p>
+      <p>Finally, in regard to content presentation, the results showed that users would expect an appealing graphical user-interface that can be accessed both on desktop and mobile devices. Moreover, such a platform would benefit from social interactions with features like an integrated commenting mechanism.</p>
+      <sec id="sec3dot1-heritage-05-00149">
+        <title>3.1. User Roles</title>
+        <p>Towards defining specific use cases and application scenarios, it was required to identify the representative user roles, according to the scope of the system and the results from the interviews and questionnaires. In this direction, user roles are derived according to the expected functionality as follows:<list list-type="order"><list-item><p>Visitor: Represents the users that can browse, view and provide feedback for content on the InCulture platform.</p></list-item><list-item><p>Creator: Refers to the authorized users who contribute with content by uploading and creating ICH resources. Creators can participate in user communities and work on collaborative authoring.</p></list-item><list-item><p>Community moderator: Represents users responsible for maintaining and coordinating a user community. Community moderators accept or reject members, assign tasks and moderate discussions at a community level.</p></list-item><list-item><p>Scientific Committee member: Refers to domain experts responsible for the content published by the InCulture platform.</p></list-item><list-item><p>Administrator: Refers to users in charge of maintaining the platform by adjusting system configurations and assigning user roles.</p></list-item></list></p>
+        <p>User roles are created on top of each other in layers, thus each one extends the role on top. For example, a user with the creator role is also a visitor, a community moderator is also a creator and so on. Each user can only have one role attached at each time. </p>
+      </sec>
+      <sec id="sec3dot2-heritage-05-00149">
+        <title>3.2. Use Cases</title>
+        <p>Use cases are indicative solutions and representations of the contract between the stakeholders and the system&#x2019;s behavior. They enable developers to understand and design software systems and platforms as artifacts of human activity, tools to use in one&#x2019;s work, or as media for interacting with other people [<xref ref-type="bibr" rid="B34-heritage-05-00149">34</xref>]. InCulture deploys a total of thirty-three (33) use cases grouped under three (3) main categories, which are briefly described in the following sections: (a) content exploring, (b) individual and collaborative content creation, and (c) users and communities management. A summary of these use cases is presented below.</p>
+        <sec id="sec3dot2dot1-heritage-05-00149">
+          <title>3.2.1. Content Exploring</title>
+          <p>The InCulture platform aims to host, preserve, and present pieces of ICH to visitors. Accordingly, use cases grouped under the content exploring category describe functionalities associated with the visitor role. Use cases under this group describe the interactions of the visitor with the content, e.g., viewing, writing comments, adding likes, etc. In brief, visitors should be able to: <list list-type="order"><list-item><p>view published narratives</p></list-item><list-item><p>view ICH resources</p></list-item><list-item><p>explore narratives using AR views</p></list-item><list-item><p>perform searches for content</p></list-item><list-item><p>add comments and/or likes to a content entry</p></list-item></list></p>
+        </sec>
+        <sec id="sec3dot2dot2-heritage-05-00149">
+          <title>3.2.2. Individual and Collaborative Content Creation</title>
+          <p>In addition to content presentation, the InCulture platform aims to support the role of the users as content creators. According to this, users with the role of creator are provided with tools to capture, collect, and upload content to the platform, as well as features to allow the collaborative authoring of narratives. Specifically, creators should be able to:<list list-type="order"><list-item><p>upload single ICH resources</p></list-item><list-item><p>create and edit ICH resources using an easy-to-use content editor</p></list-item><list-item><p>attach multimedia files to an ICH resource</p></list-item><list-item><p>provide metadata to ICH resources</p></list-item><list-item><p>create and edit parts of narratives by referring to existing ICH resources or adding custom content</p></list-item><list-item><p>collaborate on narratives and exchange messages via message boards with members of the same community</p></list-item></list></p>
+        </sec>
+        <sec id="sec3dot2dot3-heritage-05-00149">
+          <title>3.2.3. Communities Moderation</title>
+          <p>One of the novelties introduced by the InCulture platform is the online formation of narratives through active collaboration between members of user communities. Towards this, several use cases were defined to showcase the related features. In brief, community moderators should be able to:<list list-type="order"><list-item><p>accept and reject join requests</p></list-item><list-item><p>view lists of communities and details for each one</p></list-item><list-item><p>modify the community details (title and description)</p></list-item><list-item><p>view community members</p></list-item><list-item><p>coordinate work and distribute tasks in regards to narratives authoring on a narrative specific message board</p></list-item><list-item><p>lead discussions on a user community specific message board</p></list-item></list></p>
+        </sec>
+        <sec id="sec3dot2dot4-heritage-05-00149">
+          <title>3.2.4. Content Moderation</title>
+          <p>As the InCulture platform is based mostly on users&#x2019; contributions in a crowdsourcing form, there is a need for content moderation policies to be applied in order to maintain a complete and historically valid content base. To this end, a governance body called a scientific committee is introduced, consisting of appointed field experts that have absolute control over what can be published or not. Following the creation of an ICH resource or narrative, a scientific committee member has to review and approve it before publication (on webpage and mobile application). Specifically, members of the scientific committee should be able to: <list list-type="order"><list-item><p>approve or reject content publication</p></list-item><list-item><p>participate in discussions on narratives</p></list-item><list-item><p>resolve conflicts related to content</p></list-item></list></p>
+        </sec>
+        <sec id="sec3dot2dot5-heritage-05-00149">
+          <title>3.2.5. System Administration</title>
+          <p>The appointment of scientific committee members and community moderators is fulfilled by general system administrators. Besides roles assignments, administrators have complete power over the user base, system settings, and content across the platform. Their actions can override every other action from users with a different role. In brief, system administrators should be able to:<list list-type="order"><list-item><p>modify the platform&#x2019;s settings, such as presentation details, text literals, etc.</p></list-item><list-item><p>appoint community moderators and scientific committee members</p></list-item><list-item><p>monitor the system&#x2019;s health in regard to availability and performance</p></list-item></list></p>
+        </sec>
+      </sec>
+      <sec id="sec3dot3-heritage-05-00149">
+        <title>3.3. UI Design</title>
+        <p>Based on the findings of the requirement analysis and the specification of use cases, several design prototypes were implemented by User Interface (UI) designers in collaboration with User Experience (UX) experts. Prototyping helps stakeholders to develop a concrete sense regarding the application that is not yet implemented. Through visualization of the application, stakeholders can determine the requirements and workflow of the system. Further, prototyping reduces cost and time because errors are detected in the early stages, providing high levels of user satisfaction at the end.</p>
+        <sec id="sec3dot3dot1-heritage-05-00149" sec-type="methods">
+          <title>3.3.1. UI Design Method Methodology</title>
+          <p>The design of the system was carried out in iterations following the principles of user-centered design, a design process in which designers focus on users and their needs throughout the process. According to user-centered design, users are included in all phases of the process through a range of research and design techniques to create useful and accessible products for them.</p>
+          <p>User-centered design is an approach to the software development process that focuses on the user rather than technology. The involvement of the end-users of the platform begins from the first stages of the design and continues until the end of the development. The method of iterative design and development is followed, which includes multiple evaluations by end-users at various stages of application design and development.</p>
+          <p>User-centered design is based on the use of techniques for communication, interaction, empathy, and encouragement of participants, to understand their needs, desires, and experiences. Thus, user-centered design is focused on the questions, ideas, and activities of the people for whom the product, system, or service is targeted, rather than on the creator&#x2019;s creative process or the characteristics of the technology. As a result, following the process of user-centered design, the creation of easy-to-use and intuitive products, systems, and services is achieved [<xref ref-type="bibr" rid="B35-heritage-05-00149">35</xref>].</p>
+          <p>More specifically, the human-centered design process is iterative, with a focus on the human being, and consists of four phases (<xref ref-type="fig" rid="heritage-05-00149-f001">Figure 1</xref>): (i) understanding and defining the context of use, (ii) defining user requirements, (iii) creating design solutions, and (iv) design evaluation [<xref ref-type="bibr" rid="B36-heritage-05-00149">36</xref>].</p>
+          <p>The benefits of the iterative design are that it involves user testing, thus providing valuable user feedback, and that it can identify problems early in the development life cycle, thus improving usability. All the above constitute iterative design, an efficient and cost-effective process for the development of UIs, ensuring a high-quality user experience.</p>
+        </sec>
+        <sec id="sec3dot3dot2-heritage-05-00149">
+          <title>3.3.2. Co-Design Workshops</title>
+          <p>Based on the functional requirements identified, two co-design workshops were held with 2 groups of 10 end users each, from which the initial design prototypes emerged. During the co-design workshops, the participants were initially introduced to the scope of the project in order to get them familiarized with ICH concepts and boost active participation. Following the briefing, a series of activities were coordinated by the workshop organizers, as described below: <list list-type="bullet"><list-item><p>Post-it notes&#x2014;Categories of Intangible Cultural Heritage: During this activity (<xref ref-type="fig" rid="heritage-05-00149-f002">Figure 2</xref>), participants were asked to note down and later grade categories of ICH.</p></list-item><list-item><p>Key&#x2014;moments of user experience: During this activity (<xref ref-type="fig" rid="heritage-05-00149-f003">Figure 3</xref>), participants were given a specific persona and were asked to visualize a usage scenario in order to achieve a predefined goal. At the end of this activity all solutions were discussed among participants.</p></list-item><list-item><p>Voting&#x2014;Pros and Cons of user communities: During this activity, participants were presented with the notion of user communities and were asked to note down ideas for user collaboration and vote for some predefined features as pros or cons.</p></list-item></list></p>
+          <p>Based on the results of the collaborative design workshops, a first version of high-fidelity prototypes was designed, which included the basic functionality of the system, both for desktop computers and mobile devices. These prototypes were then evaluated by usability experts, following the heuristic evaluation method. Later, the same prototypes were also evaluated by representative end-users. The prototypes were modified based on the evaluation results, resulting in the final application design (<xref ref-type="fig" rid="heritage-05-00149-f004">Figure 4</xref>). </p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec4-heritage-05-00149">
+      <title>4. System Architecture</title>
+      <p>The InCulture platform aims to support multimedia narratives that are implemented as a combination of web-based technologies and a standalone mobile application that features on-the-go content exploration and delivers AR experiences. The functional architecture of the InCulture platform, presented in this section (<xref ref-type="fig" rid="heritage-05-00149-f005">Figure 5</xref>), describes the fundamental architectural components.</p>
+      <sec id="sec4dot1-heritage-05-00149">
+        <title>4.1. End-User Applications</title>
+        <p>The InCulture platform aims to acquire, preserve, and present &#x399;CH content in the form of narratives, which are captured and uploaded to the system by users. End-user applications, offered as a website and a standalone mobile application, have a significant role in the success of the platform, as they are the tools via which users interact with the system. Within the InCulture platform, three applications are created, each of which focuses on a specific range of overall functionality, namely the public content presentation website, the content exploration mobile application offering capturing tools, and the online content management application.</p>
+        <sec id="sec4dot1dot1-heritage-05-00149">
+          <title>4.1.1. Web Application for Content Presentation</title>
+          <p>The web application for content presentation includes a series of graphical user interfaces to facilitate the discovery, browsing, and viewing of the available ICH content by end-users. The homepage (<xref ref-type="fig" rid="heritage-05-00149-f004">Figure 4</xref>) aims, on the one hand, to present to the user the topic of the page (i.e., ICH), and on the other hand, to promote featured content. A number of narratives are selected by the system administrators to be featured on the homepage.</p>
+          <p>Since narratives are a fundamental element of the InCulture platform, their visualization is of significant importance. A narrative consists of one or more ICH entries, accompanied by multiple texts and multimedia elements, to form a longer, added-value story (<xref ref-type="fig" rid="heritage-05-00149-f006">Figure 6</xref>). The ICH resources included in a narrative aim to support the story with facts/evidence. They can either be referenced by their title and a corresponding link or be included as is (full content). The authors of the narrative have full control in regard to the final structure of the narrative.</p>
+          <p>InCulture is a collaboration platform that promotes the formation of user communities. Users that share common interests can become members of a community and work together towards collecting pieces of ICH and creating narratives. Communities (<xref ref-type="fig" rid="heritage-05-00149-f007">Figure 7</xref>) are visible to the public and any registered user can apply to become a member.</p>
+          <p>The web application retrieves and posts data via a defined REST API supported by the API service provider. It is implemented using Angular [<xref ref-type="bibr" rid="B37-heritage-05-00149">37</xref>], an open-source framework for web applications, supported by Google and a large community of contributors. Frameworks such as Angular support the development of complex single-page applications by providing mechanisms for managing and presenting the data arriving from the data provider. </p>
+        </sec>
+        <sec id="sec4dot1dot2-heritage-05-00149">
+          <title>4.1.2. AR Mobile Application for Content Exploration, Capturing, and Upload</title>
+          <p>The use of mobile applications is increasingly common, and users have high expectations of these applications, in terms of how easy they are to use and how quickly content is loaded on them (i.e., performance). However, designing for mobile devices is a very demanding process because of the smaller screen sizes. Consequently, several parameters must be taken into account (e.g., minimizing the cognitive load, removing unnecessary visual elements, easy navigation, etc.) while designing mobile applications so that the content is presented in the best way. Thus, although the web application is designed to have a responsive layout (support multiple screen resolutions), a complementary mobile app is implemented to offer a clean, mobile-centric design (<xref ref-type="fig" rid="heritage-05-00149-f008">Figure 8</xref>).</p>
+          <p>Additionally, the mobile application features a location-based AR view (<xref ref-type="fig" rid="heritage-05-00149-f009">Figure 9</xref> left), where narratives appear in the real world through the user&#x2019;s mobile device. To achieve this, the application exploits the location metadata of narrative entries and the sensors of the mobile device (GPS, gyroscope, compass) in order to draw a real-time visual representation of them on the screen. The graphical elements are displayed in such a way that the nearest is at the top of the projection stack, while the farthest is placed behind it with a smaller size.</p>
+          <p>Finally, since the InCulture platform aims to support the role of the user as creator too, the mobile application facilitates tools for multimedia capturing and upload. Via a dedicated content uploading screen (<xref ref-type="fig" rid="heritage-05-00149-f009">Figure 9</xref> right), users can capture multimedia content and upload it to the platform. Importing already captured material from the device&#x2019;s library is also supported. In both cases, users add some basic description of the uploaded content, while the platform extracts further metadata from it, such as location, size, time, etc., and stores them accordingly.</p>
+          <p>To support multiple platforms (iOS, Android, etc.) the mobile application for InCulture is implemented as a Progressive Web App (PWA) [<xref ref-type="bibr" rid="B38-heritage-05-00149">38</xref>], a modern technology that allows the development of platform-agnostic applications. PWAs are based on open technologies such as HTML5 [<xref ref-type="bibr" rid="B39-heritage-05-00149">39</xref>], CSS3 [<xref ref-type="bibr" rid="B40-heritage-05-00149">40</xref>], and JavaScript [<xref ref-type="bibr" rid="B41-heritage-05-00149">41</xref>] and do not need an App Store for distribution since this can be achieved just by entering a URL. With PWAs multiple heterogeneous mobile platforms are supported using a single codebase. Some of the features offered by PWAs include (i) local databases, (ii) content capturing using the camera application of the device, (iii) offline content viewing, (iv) local caching, and more. </p>
+        </sec>
+        <sec id="sec4dot1dot3-heritage-05-00149">
+          <title>4.1.3. Content Management Application</title>
+          <p>Since the ICH content hosted by the InCulture platform needs to be constantly enriched and extended, a management application is implemented, on which creators can upload, create, and edit content. The management application can be accessed by authorized members only. Access to the views of the Content Management Application is controlled via a hierarchy of user roles, each one granting access to specific views and functionality. For example, a user with a creator role will only be able to upload and edit content, a user with a community moderator role will be able to coordinate community actions and edit its members, while a user with a general administrator role will be able to appoint community moderators and edit the list of users, publish and reject the content, etc.</p>
+          <p>The homepage of the management tool (i.e., Dashboard) presents an overview of the content that is most important and relevant to the user (<xref ref-type="fig" rid="heritage-05-00149-f010">Figure 10</xref>), specifically, the recently created content, recently created narratives by the communities to which the user belongs, bookmarks for ICH resources, and bookmarks for narratives.</p>
+          <p>The content management application features a rich web editor (HTML) on which creators can author their ICH resources (<xref ref-type="fig" rid="heritage-05-00149-f011">Figure 11</xref>). The editor supports font formatting, html elements, such as dividers, tables, etc. and multimedia. In addition, the ICH resources include a number of descriptive metadata, such as (i) title, (ii) type, (iii) category, (iv) tags, (v) featured image, (vi) location, (vii) time, and (viii) source.</p>
+          <p>Accordingly, creators can view, edit, and create narratives by combining single ICH resources with additional text and multimedia (<xref ref-type="fig" rid="heritage-05-00149-f012">Figure 12</xref>). The narrative consists of a series of blocks that each includes a reference to a single ICH resource or free text along with the use of multimedia. Blocks can be arranged at the creator&#x2019;s preference using a drag-and-drop mechanism. The final result is an extended story presenting an ICH topic in a versatile way by combining multiple ICH resources, wrapped with additional blocks of text and multimedia. Moreover, since narratives are meant to be formed collaboratively, a special message board is integrated into this view to support open discussions between the members who are working on it (<xref ref-type="fig" rid="heritage-05-00149-f013">Figure 13</xref>).</p>
+          <p>The management application also facilitates the communities&#x2019; administration. Administrators can create, edit, and delete communities and appoint community moderators (<xref ref-type="fig" rid="heritage-05-00149-f014">Figure 14</xref>). A community moderator is responsible for accepting or rejecting member requests. A message board is also featured on this page towards promoting discussions between members of the community, e.g., about upcoming events, planned narratives, etc.</p>
+          <p>The content management application, like the web application, is implemented using Angular [<xref ref-type="bibr" rid="B37-heritage-05-00149">37</xref>] for content presentation. </p>
+        </sec>
+      </sec>
+      <sec id="sec4dot2-heritage-05-00149">
+        <title>4.2. API Service Provider</title>
+        <p>The API Service Provider is the core foundation of the system. Its main purpose is to manage and serve content to end-user applications and maintain the synergies between the system components. The API service provider connects to and retrieves data from the database and object storage, performs data manipulation, and exposes content to end-user applications via a well-defined REST API [<xref ref-type="bibr" rid="B42-heritage-05-00149">42</xref>]. The same applies to content production, where the content originating from the content management application is posted to the API service provider, which then performs the data-storing procedures. In general, the operations supported by this service include (i) Creating, Reading, Updating, and Deleting (CRUD) resources, (ii) handling uploads and downloads of multimedia content, and (iii) text-based search functionality for content and metadata. </p>
+        <p>The API service provider is implemented with Node.js [<xref ref-type="bibr" rid="B43-heritage-05-00149">43</xref>], a popular open-source technology for building web applications based on JavaScript [<xref ref-type="bibr" rid="B41-heritage-05-00149">41</xref>]. Node.js applications are based on asynchronous events, resulting in efficiency and performance.</p>
+      </sec>
+      <sec id="sec4dot3-heritage-05-00149">
+        <title>4.3. Multimedia Object Storage</title>
+        <p>Multimedia files are essential for the project as they serve as supporting material for the ICH narratives. Multimedia Object Storage is the platform&#x2019;s central media storage service. Images, videos, audio clips, 3D models, etc. are uploaded and kept organized appropriately for quick access by the system. To support this, the Min.IO [<xref ref-type="bibr" rid="B44-heritage-05-00149">44</xref>] solution was integrated, which offers S3-compatible object storage facilities. Min.IO supports high performance, availability, and scalability.</p>
+      </sec>
+      <sec id="sec4dot4-heritage-05-00149">
+        <title>4.4. Database</title>
+        <p>To maintain and preserve the system&#x2019;s data and metadata, there is a need for a permanent storage solution that will be responsible for data storage and retrieval within the system. To this end, a MongoDB [<xref ref-type="bibr" rid="B45-heritage-05-00149">45</xref>] database is integrated to handle the collections of data and to provide a fast storage solution with instant access. In contrast to relational databases, NoSQL [<xref ref-type="bibr" rid="B46-heritage-05-00149">46</xref>] databases like MongoDB offer significant performance increases on queries and efficient large-scale data management.</p>
+      </sec>
+      <sec id="sec4dot5-heritage-05-00149">
+        <title>4.5. Search Engine Index Storage</title>
+        <p>To support further content exploration within the InCulture platform, a powerful search mechanism is required to enable instant keyword-based text search on the content. To this end, a full-text search engine based on Elasticsearch [<xref ref-type="bibr" rid="B47-heritage-05-00149">47</xref>] is integrated to facilitate the efficient storage and searching of big volumes of textual keywords in near real-time. Indexes are stored in a JSON format as key-value pairs.</p>
+      </sec>
+      <sec id="sec4dot6-heritage-05-00149">
+        <title>4.6. Semantic Data Generator Service</title>
+        <p>To preserve and promote the ICH resources produced within the platform, InCulture supports the modeling and publishing of data collections using semantic web technologies. According to this, ICH resources are modeled using classes and relationships, which are described in popular ontologies created by the scientific community. Through this modeling and classification, both humans and computers can interpret the data and their relationships, thus supporting automated information discovery. Thus, the ICH content created for the InCulture platform is not isolated, but is interconnected to and publicly accessible by related semantic data services and sources.</p>
+        <p>Specifically, for the representation of cultural content, InCulture introduces a representation model, based on and extending CIDOC CRM [<xref ref-type="bibr" rid="B5-heritage-05-00149">5</xref>], an ISO standard [<xref ref-type="bibr" rid="B48-heritage-05-00149">48</xref>], which aims to support the exchange of information between heterogeneous cultural heritage data sources. In this direction, it offers semantic definitions to transform disparate local data sources into a coherent and general information center.</p>
+        <p>In particular, CIDOC CRM acts as a best-practice guide for conceptual modeling, while supporting information systems engineers to effectively structure and associate heritage objects in the systems they implement. It also acts as a common language for domain experts and technical teams when analyzing a system&#x2019;s requirements, ensuring the correct use of concepts for cultural objects. As a common language, it allows the identification of common elements of content that exist in different forms. CIDOC CRM defines a number of base classes and relationships between them. According to this, it supports queries on different sources and consolidates the related data. In addition, CIDOC CRM is extensible, allowing users to create relevant extensions for their application needs.</p>
+        <p>At the top of the class hierarchy in CIDOC CRM is the &#x201C;E1 CRM Entity&#x201D; and below are the (i) &#x201C;E77 Persistent Item&#x201D; class, which represents something permanent (e.g., people, animals, things, ideas or products) and the (ii) &#x201C;E2 Temporal Entity&#x201D; class, which represents elements that have a duration (e.g., a period of time or an event). &#x201C;E77 Persistent Item&#x201D; includes subclasses for physical objects, e.g., the &#x201C;E22 Human-Made Object&#x201D; but also for intangible concepts, such as the &#x201C;E28 Conceptual Object&#x201D; [<xref ref-type="bibr" rid="B49-heritage-05-00149">49</xref>]. The latter and its subclasses are adopted by the InCulture data representation model for ICH resources.</p>
+        <p>The &#x201C;E28 Conceptual Object&#x201D; class can describe intangible objects created or invented by someone and then referred to or discussed between people. Objects of this class can exist simultaneously in several media, such as paper, audio, photographs, paintings, human memory, etc. They cannot be destroyed and exist as long as they can be found in at least one medium or at least one human memory. Their existence ends when the last carrier and last memory is lost.</p>
+        <p>To model the categories (types) of ICH resources in InCulture, the class &#x201C;E55 Type&#x201D; is used. Accordingly, for each defined ICH category an object of the class &#x201C;E55 Type&#x201D; is created and ICH resources will be linked to the corresponding category using the relation &#x201C;P2 has type&#x201D;.</p>
+        <p>In addition, each object can optionally refer to a specific geographic point with the use of the &#x201C;E53 Place&#x201D; class. ICH resources referring to events are modeled using the &#x201C;E5 Event&#x201D; class and the corresponding relationship &#x201C;P4 has time-span&#x201D; and class &#x201C;E52 Time-Span&#x201D; are utilized accordingly.</p>
+        <p>Finally, the InCulture representation model (<xref ref-type="fig" rid="heritage-05-00149-f015">Figure 15</xref>) extends CIDOC CRM with the addition of the class &#x201C;ICE1 Narrative&#x201D;, which is used to represent narratives. Specifically, using the &#x201C;ICP2 consists of&#x201D; property, a narrative can include one or more conceptual (cultural) objects and events that are related in some way, for example, geographically, temporally, or thematically.</p>
+        <p>Content modeling is based on metadata provided by the creators (e.g., time of an event) or has been automatically extracted by uploaded files (e.g., the location where an image is captured, time, etc.). The Semantic Data Generator Service aims to exploit the data and metadata of content entries to generate semantic information. The generated data are produced in the form of N3 RDF triplets [<xref ref-type="bibr" rid="B50-heritage-05-00149">50</xref>] and are stored in a graph database to be made publicly available. Third parties can perform queries across the available knowledge graphs using the SPARQL query language [<xref ref-type="bibr" rid="B51-heritage-05-00149">51</xref>].</p>
+      </sec>
+    </sec>
+    <sec id="sec5-heritage-05-00149">
+      <title>5. Deployment</title>
+      <p>The InCulture platform consists of multiple heterogeneous services, such as multimedia object storage, an API service provider, an HTTP server (used to serve the web applications), a database, etc. The deployment of such a platform is a challenging task as each service requires a specific environment, settings, or libraries to run. Moreover, services need to run in isolation to maintain the security and integrity of each one. To this end, Docker [<xref ref-type="bibr" rid="B52-heritage-05-00149">52</xref>] was utilized, a solution based on the containerization paradigm for virtualization, according to which a container consists of an entire runtime environment, an application, its dependencies (libraries and executables), and configuration files. Docker is an open-source project providing tools for developers to create software and share their development environment as well as for system administrators to deploy software. Docker meets all the requirements for the deployment of a platform like InCulture i.e., (i) components isolation and self-containment, (ii) scalability, (iii) high availability, and (iv) data persistence. The Docker containers for the InCulture services can be deployed on VMs of a cloud infrastructure or any enterprise-level infrastructure such as Amazon Web Services (AWS) [<xref ref-type="bibr" rid="B53-heritage-05-00149">53</xref>], based on business demands. </p>
+    </sec>
+    <sec id="sec6-heritage-05-00149">
+      <title>6. System Evaluation</title>
+      <p>Following the implementation and deployment of the InCulture platform, an evaluation series took place in order to validate its usability. Specifically, the evaluation was conducted in two phases with two different evaluation techniques as described below. </p>
+      <p>The first phase involved a cognitive walkthrough [<xref ref-type="bibr" rid="B54-heritage-05-00149">54</xref>], a technique used to evaluate the learnability of a system from the view of a new user. A team of internal users who had limited or no prior contact with the platform participated in this phase. The participants were provided with a set of data including (i) one interview, (ii) three ICH items sourced out of the interview, (iii) one draft narrative related to the provided resources, (iv) one related photo and (v) one related audio clip. Next, the participants were asked to review the provided material and were given a number of tasks to work on. Some of the tasks were simple, such as (i) creating an account, (ii) content browsing, and (iii) searching for a specific topic, while others were more complex, such as (i) writing a comment for a narrative, (ii) creating a new interview transcription entry, (iii) editing an ICH resource, and (iv) authoring a narrative using feedback from other users. During the walkthrough, the evaluators were present in order to keep notes about the discovered issues reported by the participants. At the end of this evaluation phase, a focus group was held in which the participants and the evaluators discussed the comments and formed a final list of technical issues that were forwarded to the design and development teams.</p>
+      <p>A heuristic evaluation [<xref ref-type="bibr" rid="B55-heritage-05-00149">55</xref>] was later conducted on the updated version of the system with external participants, professionals, and academics in the domains of history, museums, and literature. The participants were given a set of data and tasks to work on and later were asked to fill in a questionnaire and discuss their experience with the evaluators. The results of the heuristic evaluation showed that the platform is effective in supporting the collaborative authoring of ICH resources and narratives and provides attractive graphical user interfaces to promote its content to the visitors. In addition, a series of issues were identified, which were categorized and given to the design and development teams. Based on the reports, an updated final version of the platform was released, which included a public page with detailed instructions on how users can contribute content, the introduction of an automated numbering mechanism for ICH resources created within the system, the development of a featured images suggestion mechanism for narratives, more detailed error messages, and more.</p>
+    </sec>
+    <sec id="sec7-heritage-05-00149">
+      <title>7. Use Case</title>
+      <p>The recent history of the island of Rhodes, Greece was used as a use case for validating the results of the InCulture platform. The definition of a use case for InCulture is of significant importance because the platform gets populated with content and users; thus, the designers have the chance to watch the ecosystem work in real life and define any areas for improvement. The target of this use case involved the capturing, collection, organization, transcription, translation, and presentation of personal stories and items of local ICH for the historical period in question, with the use of the InCulture platform. The content produced within the use case is valuable for promotional reasons as well, towards the possible commercial exploitation of the platform. The use case acted as the proof of concept for the product tested at a small scale before going to a large scale.</p>
+      <p>The use case focuses on the period between 1912 and 1948 (WWII): the former date signals the beginning of the Italian administration through the military occupation of the Dodecanese; the latter indicates the date of the island&#x2019;s annexation to the Greek state. This period has been selected not only for its historical interest but also because it is at the limits of living memory (first level witnesses). Since the events are now eight decades away, people who have memories of the Italian period are constantly decreasing. Furthermore, the surviving memory of that time is not only of local importance, as these people are the last in all of Greece to have experienced foreign sovereignty (not just occupation) and the process of annexation and integration into Greece.</p>
+      <p>In the period between 1912 and 1943, the Dodecanese islands came under Italian control, initially in the form of military occupation, and later as an internationally recognized Italian possession. The Italian capitulation of September 1943, however, changed the situation and resulted in Nazi Germany occupying the islands. At the end of the war in 1945, the islands temporarily passed into the hands of Britain and from there, in 1947, to Greece.</p>
+      <p>Initially, Greece was not given sovereignty over the islands, but only their administration, which was carried out by the Dodecanese Military Administration. Annexation by Greece took place in 1948, the islands coming under the civilian General Administration of Dodecanese. This transitional status lasted until 1955, at which time the Dodecanese islands became a regular part of the Greek administrative structure. To this day, the Dodecanese remains the final addition to Greek territory.</p>
+      <sec id="sec7dot1-heritage-05-00149" sec-type="methods">
+        <title>7.1. Methodology</title>
+        <p>The collection of CH resources and population of the InCulture platform took place in three steps: (i) conducting interviews, (ii) production of ICH resources, most of them extracted out of the interviews, and (iii) synthesis of narratives based on the ICH items produced. During the first phase, several unstructured interviews were conducted, with people having first-level testimonies and memories from the period in question. Interviewees not only referred to significant and crucial historic events and facts but also portrayed aspects of everyday life that are rarely recorded in research studies and official documents. After all, ICH is part of everyday life and any discussion about the daily life of a subject also provides information of this nature. Thus, even though oral history is not identical to ICH, methodologically, the use of interviews in the context of ICH research is widespread and has a long history [<xref ref-type="bibr" rid="B56-heritage-05-00149">56</xref>]. The relationship of history with collective identity and ICH is emphasized in the very definition of ICH by UNESCO: &#x201C;This intangible cultural heritage, transmitted from generation to generation, is constantly recreated by communities and groups in response to their environment, their interaction with nature and their history, and provides them with a sense of identity and continuity, [&#x2026;]&#x201D; [<xref ref-type="bibr" rid="B2-heritage-05-00149">2</xref>].</p>
+        <p>The interviews, although unstructured, remained organized with a beginning, middle, and end, while simultaneously providing an opportunity for the interviewees themselves to ask questions. The questions asked by the interviewers were clear, using terminology appropriate to the educational level of the interviewees. Transcripts from the interviews were then produced and uploaded to the InCulture platform via the Content Management application. The core user group of the use case studied the transcriptions and extracted multiple atomic pieces of information out of the interviews (ICH resources), for example, what courses were taught in school, how many students there were per class, in what languages they were taught, and so on. Any photos provided during the interviews were also uploaded to the InCulture platform as CH resources. </p>
+        <p>This analysis and deconstruction of personal stories created the fundamental material used later in building the narratives. Following the interview analysis, the InCulture initial user group formed narratives by combining the atomic ICH resources produced. The pieces of information were wrapped with additional text or multimedia blocks to form an interesting, versatile, story-based narrative.</p>
+      </sec>
+      <sec id="sec7dot2-heritage-05-00149">
+        <title>7.2. Results</title>
+        <p>In the context of the project trials, eight individuals formed a user community in the InCulture system and collaborated toward producing ICH content. An individual from the initial user group was appointed by the system administrators as the community moderator and was responsible for coordinating the actions of the group. In total, during the content creation process, over 100 messages were exchanged through the collaboration tools of the platform, i.e., the community-wide and the narrative-specific message boards. The data collected and produced during the island of Rhodes use case covered a wide variety of topics and resulted in recording and transcribing 29 open-type interviews, producing 375 single ICH resources and 119 photos documenting the period in question. ICH resources were organized by the creators in four main categories:<list list-type="order"><list-item><p>Events&#x2014;Personal stories</p></list-item><list-item><p>Ethnography&#x2014;Folklore</p></list-item><list-item><p>Everyday life</p></list-item><list-item><p>Institutions and public life</p></list-item></list></p>
+        <p>In addition, each ICH item was characterized by the following attributes:<list list-type="bullet"><list-item><p>Source (interview, online article, book, etc.)</p></list-item><list-item><p>Location (specific geographic location or area)</p></list-item><list-item><p>Date (specific or approximate)</p></list-item><list-item><p>Tags</p></list-item></list></p>
+        <p>Unlike single ICH resources, narratives are semantically complete, with a beginning, middle, and end. Narratives consist of a combination of ICH resources (textual, photographic, etc.) and may be supplemented with secondary sources and references. In the context of the use case, 15 narratives were authored using the available ICH resources in the system. The content is uploaded on the online InCulture platform and is publicly available to visitors (in the Greek language, available at <uri>https://explore.inculture-project.gr</uri> (accessed on 15 September 2022)). </p>
+      </sec>
+    </sec>
+    <sec id="sec8-heritage-05-00149" sec-type="conclusions">
+      <title>8. Conclusions and Future Work</title>
+      <p>In this paper, we presented the InCulture platform that features tools and applications to support the creation and presentation of narratives of intangible CH resources through the formation of communities. The platform has considerable potential to improve the quality and learning value of digital cultural resources through the introduction of an affordable, ready-to-use, and cost-effective theoretical and technological framework for the representation and experiential presentation of cultural elements. The adopted approach for storage and semantic data annotation and production ensures that content generated within the platform can be perceived and understood by humans as well as third-party systems, towards creating a network of ICH resources. </p>
+      <p>In addition, the mobile application created supports AR presentation capabilities and has the potential to increase the awareness of citizens regarding the cultural environment and further engage them to actively participate in the creation of CH resources. Tourism can also benefit from the InCulture platform, as ICH resources can be explored in a location-centric manner, allowing visitors to explore the cultural history of an area during their visits.</p>
+      <p>Following the initial release of the system, two user evaluations were conducted, producing valuable insights, a cognitive walkthrough with internal users, and a heuristic evaluation with field experts. The feedback gathered from the evaluations was analyzed by the system&#x2019;s design and development teams towards improving several features. The use case for the island of Rhodes resulted in content population and acted as the proof of concept for the InCulture platform.</p>
+      <p>At the time of writing, both the platform and mobile application are officially online and accessed by users as part of the dissemination activities of the InCulture project. It is expected that this will provide the possibility of evaluating, in the future, the combination of web-based and location-based narrative provision in terms of user experience and user satisfaction.</p>
+    </sec>
+  </body>
+  <back>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, G.M., I.K. and N.P.; Formal analysis, G.M, N.P., I.K.; Funding acquisition, N.P. and M.A.; Methodology, G.M.; Project administration, G.M., I.K., C.S.; Software, G.M., E.P., K.V. and N.A.; Supervision, M.A. and C.S.; Validation, I.P. and S.A.P.; Visualization, G.M., E.P., K.V. and N.A.; Writing&#x2014;original draft, G.M. and N.P.; Writing&#x2014;review &amp; editing, I.K., C.S., M.A., N.P., I.P., S.A.P. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Data Availability Statement</title>
+      <p>Available upon request.</p>
+    </notes>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>The project InCulture would like to thank the participants of the knowledge collection activities for the provision of testimonies, memories, and valuable information for the representation of the fifteen narratives of the InCulture use case.</p>
+    </ack>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-heritage-05-00149">
+        <label>1.</label>
+        <element-citation publication-type="web">
+          <article-title>What Is Intangible Cultural Heritage?</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ich.unesco.org/en/what-is-intangible-heritage-00003" ext-link-type="uri">https://ich.unesco.org/en/what-is-intangible-heritage-00003</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-06-07">(accessed on 7 June 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B2-heritage-05-00149">
+        <label>2.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>UNESCO</collab>
+            <collab>ICH</collab>
+          </person-group>
+          <source>Basic Texts of the 2003 Convention for the Safeguarding of the Intangible Cultural Heritage</source>
+          <publisher-name>UNESCO</publisher-name>
+          <publisher-loc>Paris, France</publisher-loc>
+          <year>2020</year>
+        </element-citation>
+      </ref>
+      <ref id="B3-heritage-05-00149">
+        <label>3.</label>
+        <element-citation publication-type="web">
+          <article-title>InCulture Platform</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://explore.inculture-project.gr" ext-link-type="uri">https://explore.inculture-project.gr</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-06-07">(accessed on 7 June 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B4-heritage-05-00149">
+        <label>4.</label>
+        <element-citation publication-type="web">
+          <article-title>InCulture Project</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.inculture-project.gr/" ext-link-type="uri">http://www.inculture-project.gr/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-06-07">(accessed on 7 June 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B5-heritage-05-00149">
+        <label>5.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doerr</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ore</surname>
+              <given-names>C.-E.</given-names>
+            </name>
+            <name>
+              <surname>Stead</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The CIDOC conceptual reference model: A new standard for knowledge sharing</article-title>
+          <source>Proceedings of the Tutorials, Posters, Panels and Industrial Contributions at the 26th International Conference on Conceptual Modeling, Auckland, New Zealand, 5&#x2013;9 November 2007</source>
+          <publisher-name>Australian Computer Society, Inc.</publisher-name>
+          <publisher-loc>Darlinghurst, Australia</publisher-loc>
+          <year>2007</year>
+          <volume>Volume 83</volume>
+          <fpage>51</fpage>
+          <lpage>56</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B6-heritage-05-00149">
+        <label>6.</label>
+        <element-citation publication-type="web">
+          <article-title>NARRATIVE|Definition of NARRATIVE by Oxford Dictionary on Lexico.com also the meaning of NARRATIVE. (n.d.). Lexico Dictionaries|English</article-title>
+          <comment>Retrieved 9 March 2021</comment>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.lexico.com/definition/narrative" ext-link-type="uri">https://www.lexico.com/definition/narrative</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-09-01">(accessed on 1 September 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B7-heritage-05-00149">
+        <label>7.</label>
+        <element-citation publication-type="book">
+          <article-title>Aristotle, Poetics</article-title>
+          <source>Oxford World&#x2019;s Classics</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Kenny</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Oxford University Press</publisher-name>
+          <publisher-loc>Oxford, UK</publisher-loc>
+          <year>2013</year>
+          <isbn>978-0191635809</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B8-heritage-05-00149">
+        <label>8.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shklovsky</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Art as technique</article-title>
+          <source>Twentieth-Century Literary Theory</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Newton</surname>
+              <given-names>K.M.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Palgrave</publisher-name>
+          <publisher-loc>London, UK</publisher-loc>
+          <year>1997</year>
+          <fpage>3</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-1-349-25934-2_1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-heritage-05-00149">
+        <label>9.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vavliakis</surname>
+              <given-names>K.N.</given-names>
+            </name>
+            <name>
+              <surname>Karagiannis</surname>
+              <given-names>G.T.</given-names>
+            </name>
+            <name>
+              <surname>Mitkas</surname>
+              <given-names>P.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Semantic Web in cultural heritage after 2020</article-title>
+          <source>Proceedings of the International Semantic Web Conference</source>
+          <conf-loc>Boston, MA, USA</conf-loc>
+          <conf-date>11&#x2013;15 November 2012</conf-date>
+          <fpage>11</fpage>
+          <lpage>15</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B10-heritage-05-00149">
+        <label>10.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doerr</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gradmann</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hennicke</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Isaac</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Van de Sompel</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Europeana Data Model (EDM)</article-title>
+          <source>Proceedings of the World Library and Information Congress</source>
+          <conf-loc>Gothenburg, Sweden</conf-loc>
+          <conf-date>10&#x2013;15 August 2010</conf-date>
+          <volume>Volume 10</volume>
+          <fpage>15</fpage>
+        </element-citation>
+      </ref>
+      <ref id="B11-heritage-05-00149">
+        <label>11.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zimmer</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Tryfonopoulos</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Weikum</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>MinervaDL: An Architecture for Information Retrieval and Filtering in Distributed Digital Libraries</article-title>
+          <source>Proceedings of the European Conference on Research and Advanced Technology for Digital Libraries, ECDL</source>
+          <conf-loc>Budapest, Hungary</conf-loc>
+          <conf-date>16&#x2013;21 September 2007</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B12-heritage-05-00149">
+        <label>12.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bloomberg</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Dekkers</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gradmann</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lindquist</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lupovici</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Verleyen</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional Specification for Europeana Rhine Release, D3.1 of Europeana v1.0 project (public deliverable)</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_Version1/Deliverables/D3.2%20%20%20%20%20Functional%20specification%20for%20the%20Europeana%20Danube%20release_370704.pdf" ext-link-type="uri">https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_Version1/Deliverables/D3.2%20%20%20%20%20Functional%20specification%20for%20the%20Europeana%20Danube%20release_370704.pdf</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-09-28">(accessed on 28 September 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B13-heritage-05-00149">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Representing narratives in digital libraries: The narrative ontology</article-title>
+          <source>Semant. Web</source>
+          <year>2021</year>
+          <volume>12</volume>
+          <fpage>241</fpage>
+          <lpage>264</lpage>
+          <pub-id pub-id-type="doi">10.3233/SW-200421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-heritage-05-00149">
+        <label>14.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Steps towards a formal ontology of narratives based on narratology</article-title>
+          <source>Proceedings of the 7th Workshop on Computational Models of Narrative (CMN 2016)</source>
+          <conf-loc>Krakow, Poland</conf-loc>
+          <conf-date>11&#x2013;12 July 2016</conf-date>
+          <publisher-name>Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik</publisher-name>
+          <publisher-loc>Wadern, Germany</publisher-loc>
+          <year>2016</year>
+        </element-citation>
+      </ref>
+      <ref id="B15-heritage-05-00149">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>A conceptualisation of narratives and its expression in the CRM</article-title>
+          <source>Int. J. Metadata Semant. Ontol.</source>
+          <year>2017</year>
+          <volume>12</volume>
+          <fpage>35</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1504/IJMSO.2017.087692</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-heritage-05-00149">
+        <label>16.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doerr</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Bekiari</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>nationale de France</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>FRBRoo, a conceptual model for performing arts</article-title>
+          <source>Proceedings of the 2008 Annual Conference of CIDOC</source>
+          <conf-loc>Athens, Greece</conf-loc>
+          <conf-date>15&#x2013;18 September 2008</conf-date>
+          <fpage>6</fpage>
+          <lpage>18</lpage>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www. cidoc2008.gr/cidoc/Documents/papers/drfile" ext-link-type="uri">http://www. cidoc2008.gr/cidoc/Documents/papers/drfile</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-08-25">(accessed on 25 August 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B17-heritage-05-00149">
+        <label>17.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hobbs</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Time Ontology in OWL, W3C Recommendation</article-title>
+          <year>2017</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.w3.org/TR/owl-time/" ext-link-type="uri">https://www.w3.org/TR/owl-time/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-08-25">(accessed on 25 August 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B18-heritage-05-00149">
+        <label>18.</label>
+        <element-citation publication-type="web">
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.w3.org/Submission/SWRL/" ext-link-type="uri">https://www.w3.org/Submission/SWRL/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-08-25">(accessed on 25 August 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B19-heritage-05-00149">
+        <label>19.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Zabulis</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mingei Crafts Ontology</article-title>
+          <year>2020</year>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.5281/zenodo.3742828" ext-link-type="uri">https://doi.org/10.5281/zenodo.3742828</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-08-25">(accessed on 25 August 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B20-heritage-05-00149">
+        <label>20.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dimitropoulos</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Manitsaris</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Tsalakanidou</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Capturing the Intangible: An Introduction to the i-Treasures Project</article-title>
+          <source>Proceedings of the International Conference on Computer Vision Theory and Applications</source>
+          <conf-loc>Lisbon, Portugal</conf-loc>
+          <conf-date>5&#x2013;8 January 2014</conf-date>
+          <fpage>773</fpage>
+          <lpage>781</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B21-heritage-05-00149">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Doulgeraki</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Galanakis</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Zabulis</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>A Web-Based Platform for Traditional Craft Documentation</article-title>
+          <source>Multimodal Technol. Interact.</source>
+          <year>2022</year>
+          <volume>6</volume>
+          <elocation-id>37</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/mti6050037</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-heritage-05-00149">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.N.</given-names>
+            </name>
+            <name>
+              <surname>Doulgeraki</surname>
+              <given-names>P.P.</given-names>
+            </name>
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.E.</given-names>
+            </name>
+            <name>
+              <surname>Adami</surname>
+              <given-names>I.I.</given-names>
+            </name>
+            <name>
+              <surname>Ntoa</surname>
+              <given-names>S.S.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.D.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.V.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Marketakis</surname>
+              <given-names>Y.Y.</given-names>
+            </name>
+            <name>
+              <surname>Kaplanidi</surname>
+              <given-names>D.D.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Representation of socio-historical context to support the authoring and presentation of multimodal narratives: The Mingei Online Platform</article-title>
+          <source>ACM J. Comput. Cult. Herit.</source>
+          <year>2021</year>
+          <volume>15</volume>
+          <fpage>1</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="doi">10.1145/3465556</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-heritage-05-00149">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Kaplanidi</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Doulgeraki</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Petraki</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Adami</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Zabulis</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Representation and Presentation of Culinary Tradition as Cultural Heritage</article-title>
+          <source>Heritage</source>
+          <year>2021</year>
+          <volume>4</volume>
+          <fpage>612</fpage>
+          <lpage>640</lpage>
+          <pub-id pub-id-type="doi">10.3390/heritage4020036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-heritage-05-00149">
+        <label>24.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Benedetti</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>A software architecture for narratives</article-title>
+          <source>Proceedings of the Italian Research Conference on Digital Libraries</source>
+          <conf-loc>Udine, Italy</conf-loc>
+          <conf-date>25&#x2013;26 January 2018</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Cham, Switzerland</publisher-loc>
+          <year>2018</year>
+          <fpage>23</fpage>
+          <lpage>29</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B25-heritage-05-00149">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A Wikidata-based tool for building and visualising narratives</article-title>
+          <source>Int. J. Digit. Libr.</source>
+          <year>2019</year>
+          <volume>20</volume>
+          <fpage>417</fpage>
+          <lpage>432</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00799-019-00266-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-heritage-05-00149">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zabulis</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Dubois</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Manitsaris</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hauser</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Magnenat Thalmann</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Ringas</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Panesse</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Cadi</surname>
+              <given-names>N.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A Representation Protocol for Traditional Crafts</article-title>
+          <source>Heritage</source>
+          <year>2022</year>
+          <volume>5</volume>
+          <fpage>716</fpage>
+          <lpage>741</lpage>
+          <pub-id pub-id-type="doi">10.3390/heritage5020040</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-heritage-05-00149">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mathioudakis</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Klironomos</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Papadaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Anifantis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Antona</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Stephanidis</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Supporting Online and On-Site Digital Diverse Travels</article-title>
+          <source>Heritage</source>
+          <year>2021</year>
+          <volume>4</volume>
+          <fpage>4558</fpage>
+          <lpage>4577</lpage>
+          <pub-id pub-id-type="doi">10.3390/heritage4040251</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-heritage-05-00149">
+        <label>28.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Patsiouras</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Evdemon</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Doulgeraki</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Stefanidi</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Ntoa</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kaplanidi</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Fasoula</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Enhancing the educational value of tangible and intangible dimensions of traditional crafts through role-play gaming</article-title>
+          <source>Proceedings of the International Conference on ArtsIT, Interactivity and Game Creation</source>
+          <conf-loc>Aalborg, Denmark</conf-loc>
+          <conf-date>10&#x2013;11 December 2020</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Cham, Switzerland</publisher-loc>
+          <year>2020</year>
+          <fpage>243</fpage>
+          <lpage>254</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B29-heritage-05-00149">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Doulgeraki</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Beisswenger</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Hauser</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Zabulis</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>An approach to enhancing contemporary handmade products with historic narratives</article-title>
+          <source>Int. J. Intang. Herit.</source>
+          <year>2021</year>
+          <volume>16</volume>
+          <fpage>124</fpage>
+          <lpage>141</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B30-heritage-05-00149">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zidianakis</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Ntoa</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Dimopoulos</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kopidaki</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ntagianta</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Ntafotis</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Xhako</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Pervolarakis</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Kontaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The invisible museum: A user-centric platform for creating virtual 3D exhibitions with VR support</article-title>
+          <source>Electronics</source>
+          <year>2021</year>
+          <volume>10</volume>
+          <elocation-id>363</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/electronics10030363</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-heritage-05-00149">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hauser</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Beisswenger</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Zabulis</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Adami</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Zidianakis</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Patakos</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Patsiouras</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Foukarakis</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Multimodal Narratives for the Presentation of Silk Heritage in the Museum</article-title>
+          <source>Heritage</source>
+          <year>2022</year>
+          <volume>5</volume>
+          <fpage>461</fpage>
+          <lpage>487</lpage>
+          <pub-id pub-id-type="doi">10.3390/heritage5010027</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-heritage-05-00149">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Karuzaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Partarakis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Patsiouras</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Zidianakis</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Katzourakis</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Pattakos</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kaplanidi</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Baka</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Cadi</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Magnenat-Thalmann</surname>
+              <given-names>N.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Realistic virtual humans for cultural heritage applications</article-title>
+          <source>Heritage</source>
+          <year>2021</year>
+          <volume>4</volume>
+          <fpage>4148</fpage>
+          <lpage>4171</lpage>
+          <pub-id pub-id-type="doi">10.3390/heritage4040228</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-heritage-05-00149">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meghini</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bartalesi</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Metilli</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Benedetti</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Introducing narratives in Europeana: A case study</article-title>
+          <source>Int. J. Appl. Math. Comput. Sci.</source>
+          <year>2019</year>
+          <volume>29</volume>
+          <fpage>7</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="doi">10.2478/amcs-2019-0001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-heritage-05-00149">
+        <label>34.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cockburn</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <source>Writing Effective Use Cases</source>
+          <publisher-name>Addison Wesley</publisher-name>
+          <publisher-loc>Boston, MA, USA</publisher-loc>
+          <year>2000</year>
+        </element-citation>
+      </ref>
+      <ref id="B35-heritage-05-00149">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giacomin</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>What is human centred design?</article-title>
+          <source>Des. J.</source>
+          <year>2014</year>
+          <volume>17</volume>
+          <fpage>606</fpage>
+          <lpage>623</lpage>
+          <pub-id pub-id-type="doi">10.2752/175630614X14056185480186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-heritage-05-00149">
+        <label>36.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>ISO 9241-210:2019</collab>
+          </person-group>
+          <source>Ergonomics of Human-System Interaction&#x2014;Part 210: Human-Centred Design for Interactive Systems</source>
+          <publisher-name>ISO</publisher-name>
+          <publisher-loc>Geneva, Switzerland</publisher-loc>
+          <year>2019</year>
+        </element-citation>
+      </ref>
+      <ref id="B37-heritage-05-00149">
+        <label>37.</label>
+        <element-citation publication-type="web">
+          <article-title>Angular</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://angular.io/" ext-link-type="uri">https://angular.io/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B38-heritage-05-00149">
+        <label>38.</label>
+        <element-citation publication-type="web">
+          <article-title>Progressive Web App Definition</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps" ext-link-type="uri">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B39-heritage-05-00149">
+        <label>39.</label>
+        <element-citation publication-type="web">
+          <article-title>HTML 5 Specification</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.w3.org/TR/2011/WD-html5-20110405/" ext-link-type="uri">https://www.w3.org/TR/2011/WD-html5-20110405/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B40-heritage-05-00149">
+        <label>40.</label>
+        <element-citation publication-type="web">
+          <article-title>CSS3</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.w3.org/Style/CSS/specs.en.html" ext-link-type="uri">https://www.w3.org/Style/CSS/specs.en.html</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B41-heritage-05-00149">
+        <label>41.</label>
+        <element-citation publication-type="web">
+          <article-title>JavaScript</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.javascript.com/" ext-link-type="uri">https://www.javascript.com/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B42-heritage-05-00149">
+        <label>42.</label>
+        <element-citation publication-type="web">
+          <article-title>What is REST</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://restfulapi.net/" ext-link-type="uri">https://restfulapi.net/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B43-heritage-05-00149">
+        <label>43.</label>
+        <element-citation publication-type="web">
+          <article-title>Node.js</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://nodejs.org/en/" ext-link-type="uri">https://nodejs.org/en/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B44-heritage-05-00149">
+        <label>44.</label>
+        <element-citation publication-type="web">
+          <article-title>Min.IO</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://min.io/" ext-link-type="uri">https://min.io/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B45-heritage-05-00149">
+        <label>45.</label>
+        <element-citation publication-type="web">
+          <article-title>MongoDB</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.mongodb.com/" ext-link-type="uri">https://www.mongodb.com/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B46-heritage-05-00149">
+        <label>46.</label>
+        <element-citation publication-type="web">
+          <article-title>What Is NoSQL?</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.mongodb.com/nosql-explained" ext-link-type="uri">https://www.mongodb.com/nosql-explained</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B47-heritage-05-00149">
+        <label>47.</label>
+        <element-citation publication-type="web">
+          <article-title>ElasticSearch</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.elastic.co/" ext-link-type="uri">https://www.elastic.co/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B48-heritage-05-00149">
+        <label>48.</label>
+        <element-citation publication-type="web">
+          <article-title>ISO 21127:2014</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.iso.org/standard/57832.html" ext-link-type="uri">https://www.iso.org/standard/57832.html</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B49-heritage-05-00149">
+        <label>49.</label>
+        <element-citation publication-type="web">
+          <article-title>E28 Conceptual Object</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://cidoc-crm.org/Entity/e28-conceptual-object/version-6.2" ext-link-type="uri">https://cidoc-crm.org/Entity/e28-conceptual-object/version-6.2</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B50-heritage-05-00149">
+        <label>50.</label>
+        <element-citation publication-type="web">
+          <article-title>N3 RDF Triplets</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.w3.org/2001/sw/RDFCore/ntriples/" ext-link-type="uri">https://www.w3.org/2001/sw/RDFCore/ntriples/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B51-heritage-05-00149">
+        <label>51.</label>
+        <element-citation publication-type="web">
+          <article-title>SPARQL Query Language for RDF</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.w3.org/TR/rdf-sparql-query" ext-link-type="uri">https://www.w3.org/TR/rdf-sparql-query</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B52-heritage-05-00149">
+        <label>52.</label>
+        <element-citation publication-type="web">
+          <article-title>Docker</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.docker.com/" ext-link-type="uri">https://www.docker.com/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B53-heritage-05-00149">
+        <label>53.</label>
+        <element-citation publication-type="web">
+          <article-title>AWS</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://aws.amazon.com/" ext-link-type="uri">https://aws.amazon.com/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-12">(accessed on 12 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B54-heritage-05-00149">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blackmon</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Polson</surname>
+              <given-names>P.G.</given-names>
+            </name>
+            <name>
+              <surname>Muneo</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cognitive Walkthrough for the Web</article-title>
+          <source>CHI</source>
+          <year>2002</year>
+          <volume>4</volume>
+          <fpage>463</fpage>
+          <lpage>470</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B55-heritage-05-00149">
+        <label>55.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Heuristic evaluation</article-title>
+          <source>Usability Inspection Methods</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Mack</surname>
+              <given-names>R.L.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>John Wiley &amp; Sons</publisher-name>
+          <publisher-loc>New York, NY, USA</publisher-loc>
+          <year>1994</year>
+        </element-citation>
+      </ref>
+      <ref id="B56-heritage-05-00149">
+        <label>56.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carmezim Gon&#xE7;alves</surname>
+              <given-names>&#x39C;.</given-names>
+            </name>
+          </person-group>
+          <article-title>A life worth remembering. Thoughts on Oral History and community&#x2019;s collective memory, MEMORIAMEDIA Review 6. Art. 6</article-title>
+          <day>2021</day>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://review.memoriamedia.net/index.php/6-article-6" ext-link-type="uri">https://review.memoriamedia.net/index.php/6-article-6</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-09-01">(accessed on 1 September 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="heritage-05-00149-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>User-centered design process.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g001.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f002" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Post-it notes&#x2014;categories of Intangible Cultural Heritage.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g002.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f003" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Key moments of the user experience.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g003.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f004" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>The homepage of the InCulture web application.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g004.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f005" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <p>Functional architecture of the InCulture system.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g005.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f006" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <p>Single narrative view.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g006.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f007" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <p>(<bold>left</bold>) Communities list, (<bold>right</bold>) detailed view of a community.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g007.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f008" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <p>Mobile application (<bold>left</bold>) home screen, (<bold>right</bold>) single narrative presentation screen.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g008.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f009" position="float">
+        <label>Figure 9</label>
+        <caption>
+          <p>AR view (<bold>left</bold>), content capture and upload screen (<bold>right</bold>).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g009.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f010" position="float">
+        <label>Figure 10</label>
+        <caption>
+          <p>Content Management Application dashboard.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g010.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f011" position="float">
+        <label>Figure 11</label>
+        <caption>
+          <p>Edit page of a single ICH resource (content area contains original text in Greek from the use case).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g011.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f012" position="float">
+        <label>Figure 12</label>
+        <caption>
+          <p>Edit page (content area contains original text from the use case in Greek).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g012.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f013" position="float">
+        <label>Figure 13</label>
+        <caption>
+          <p>Message board for a narrative.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g013.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f014" position="float">
+        <label>Figure 14</label>
+        <caption>
+          <p>Community page showing the members and a message board.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g014.tif"/>
+      </fig>
+      <fig id="heritage-05-00149-f015" position="float">
+        <label>Figure 15</label>
+        <caption>
+          <p>The InCulture ontology.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="heritage-05-00149-g015.tif"/>
+      </fig>
+    </sec>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher&#x2019;s Note:</bold> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>
