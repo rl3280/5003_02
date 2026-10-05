@@ -40,7 +40,6 @@ When it’s ready, type a prompt followed by the path to an image file, for exam
 
 Describe this image: C:\Users\YourName\Pictures\photo.jpg
 
-Use a real image path on your PC. Typ
 
 
 C:\Users\rlewis\.continue\config.yaml
