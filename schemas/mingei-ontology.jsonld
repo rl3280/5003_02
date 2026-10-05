@@ -1,0 +1,6004 @@
+[
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasSubject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This property relates the class ActorWithRole with the class E39 Actor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#ActorWithRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSubject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCreationDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasCreationDate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#TimeInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Grinding_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Grinding_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Narrative",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class represents a narrative."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Narrative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Trimming",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Trimming"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_bounding_box_min_lon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionBBox"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has bounding box min lon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Polishing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Polishing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Distilation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Distilation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#usedMastic",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "usedMastic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Shedding",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#ChicleMixtureProduction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ChicleMixtureProduction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Production_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Production_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#SpatialRegionPolygon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SpatialRegionPolygon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasMOType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasMOType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasSoilCleaning",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasSoilCleaning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Soil+Cleaning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Xistiri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Xistiri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Agricultural_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#hasBeginning",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Beginning of a temporal entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has beginning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2006/time#Instant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#beginsAt"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cracking_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cracking_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Reheating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Reheating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#ActorWithRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This reification class was introduced to allow the assignment of a role to an actor. It represents the participation of the actor in the event.\n\nThis class has to be linked to:\n• an instance of the class E5 Event, through the property hadParticipant\n• an instance of the class E39 Actor, through the property hasSubject\n• an instance of the class Role, through the property hasRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ActorWithRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasGlassMakingSubprocess",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasGlassMakingSubprocess"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Subprocess"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#forksFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Fork"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "forksFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCoating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCoating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Coating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#ProperInterval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Proper interval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#Interval"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#TimeInterval"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P148_has_component",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Roasting_Pan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Roasting_Pan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasRecipeStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasRecipeStep"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P69_is_associated_with"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Processing_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Processing_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#SpatialRegionPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SpatialRegionPoint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Weaving",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#transistsTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Transition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "transistsTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects an Event to other Events that are part of it. Equivalent to the CRM property P9 consists of."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasSubevent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#TimePoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents a time point. Equivalent to the OWL Time class Instant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "TimePoint"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#hasEnd",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "End of a temporal entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has end"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2006/time#Instant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#hasTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#endsAt"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#forksTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Fork"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "forksTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Overhead_Drop",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Overhead_Drop"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Ladle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Ladle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Kitchen_Utensils"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Packaging",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Packaging"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasSieving",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasSieving"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Sieving"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasProcessingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#refersToMOSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MObject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "refersToMOSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents a person. Equivalent to the CRM class E21 Person."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Gathering_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gathering_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasBeating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Beating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasWeavingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasClassification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasClassification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasProcessingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hadParticipant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This property relates an event with an instance of the class ActorWithRole."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadParticipant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#ActorWithRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Blocking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Blocking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#mergesFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Merge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "mergesFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasContent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a Narration to its content (a MediaObject). Equivalent to the FRBRoo property R9 is realised in."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Narration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasContent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MObject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Oil_Production",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Oil_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Jacking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Jacking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Spatula",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Spatula"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Kitchen_Utensils"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Refining",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Refining"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Carlo Meghini, Valentina Bartalesi, Daniele Metilli, Filippo Benedetti"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2019-08-08"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/publisher": [
+      {
+        "@value": "ISTI-CNR"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The ontology used to represent narratives in the Mingei project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Mingei Narrative Ontology"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Bowl",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Bowl"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Furnace_type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Furnace_type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#hasTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Supports the association of a temporal entity (instant or interval) to any thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasFormingGumDragees",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasFormingGumDragees"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#FormingGumDragees"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Kenditiri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Kenditiri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Agricultural_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Glass_Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glass_Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cultivation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Gravity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gravity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#SpatialRegion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SpatialRegion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Fork",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Fork node is a control node that has one incoming edge and multiple outgoing edges and is used to split incoming flow into multiple concurrent flows. Fork nodes are introduced to support parallelism in activities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Fork"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Blowing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Blowing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasDifficulty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasDifficulty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCookingDimensions"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Presentation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "A presentation is a way of presenting a narration on a device, with the possible addition of other stuff (added in separate presentation segments), like music, video, narrating voice, subtitles, images, etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Presentation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Loom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Represents all type of Looms"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPlowing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPlowing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Plowing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pull_The_Lip",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pull_The_Lip"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasAlternative",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Branch"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasAlternative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Alternative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasKendima",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasKendima"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Kendima"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPartWeavingTool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This property connects a weaving tool to its parts. \nExamples:\n\n- Loom hasPartWeaving Pedal \n- Loom hasPartWeaving Shuttle\n- Shuttle hasPartWeaving Bobbin"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Branch",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Branch node is a control node that accepts tokens on one incoming edge and selects one outgoing edge from one or more outgoing alternatives. They support conditional branchings."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Branch"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_place_name",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has place name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Recipe_Step",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recipe_Step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#refersToMOFragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This property is used to connect a presentation segmnent with the MOFragment it refers to"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation+Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "refersToMOFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MOFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pistacia_Lentiscus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pistacia_Lentiscus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_bounding_box_min_lat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionBBox"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has bounding box min lat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPilotType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPilotType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Alternative",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "An alternative node has a predicate and an activity state that will be activated once the predicate is true. They are used to link the branch nodes with their alternative outgoing activity states."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Alternative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Peel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Peel"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#CoolingChicle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "CoolingChicle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope note:\n\t\t\t\tThis class comprises distinct concepts or combinations of concepts identified in artistic and intellectual expressions, such as poems, stories or musical compositions. Such concepts may appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea. A Work may be elaborated by one or more Actors simultaneously or over time. The substance of Work is ideas. A Work may have members that are works in their own right.\n\t\t\t\t\n\t\t\t\tA Work can be either individual or complex. If it is individual its concept is completely realised in a single F22 Self-Contained Expression. If it is complex its concept is embedded in an F15 Complex Work. An F15 Complex Work consists of alternative members that are either F15 Complex Works themselves or F14 Individual Works.\n\t\t\t\t\n\t\t\t\tA Work is the product of an intellectual process of one or more persons, yet only indirect evidence about it is at our hands. This can be contextual information such as the existence of an order for a work, reflections of the creators themselves that are documented somewhere, and finally the expressions of the work created. As ideas normally take shape during discussion, elaboration and implementation, it is not reasonable to assume that a work starts with a complete concept. In some cases, it can be very difficult or impossible to define the whole of the concept of a work at a particular time. The objective evidence for such a notion can only be based on a stage of expressions at a given time. In this sense, the sets of ideas that constitute particular self-contained expressions may be regarded as a kind of “snap-shot” of a work.\n\t\t\t\t\n\t\t\t\tA Work may include the concept of aggregating expressions of other works into a new expression. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. This does not make the contents of the aggregated expressions part of this work, but only parts of the resulting expression.\n\t\t\t\t\nExamples:\nAbstract content of Giovanni Battista Piranesi’s ‘Carcere XVI: the pier with chains: 1st state’ (F14)\n\n‘La Porte de l’Enfer’ by Auguste Rodin conceived between 1880 and 1917 (F15)\n\n‘Hamlet’ by William Shakespeare (F15)  \n        "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F1 Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Glass_Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glass_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a Fabula to its Events. Equivalent to the CRM property P9 consists of."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Fabula"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasEvent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope note:\nThis class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.\n\nThe existence of an instance of F23 Expression Fragment can be due to accident, such as loss of material over time, e.g. the only remaining manuscript of an antique text being partially eaten by worms, or due to deliberate isolation, such as excerpts taken from a text by the compiler of a collection of excerpts.\n\nAn F23 Expression Fragment is only identified with respect to its occurrence in a known or assumed whole. The size of an instance of F23 Expression Fragment ranges from more than 99% of an instance of F22 Self-Contained Expression to tiny bits (a few words from a text, one bar from a musical composition, one detail from a still image, a two-second clip from a movie, etc.).\n\nExamples:\nThe only remnants of Sappho’s poems \n\nThe words ‘Beati pauperes spiritu’ (excerpted from Matthew’s Gospel 5,3 in Latin translation)       \n        "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F23 Expression Fragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasGlassMakingStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Subprocess"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasGlassMakingStep"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Loom_Treadle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Represents all types of Pedals used in Looms during Weaving activities"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Loom Treadle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Sieve",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Sieve"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Processing_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Marvering",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Marvering"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#CleaningWithWater",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "CleaningWithWater"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope note:\nThis property associates an instance of F22 Self-Contained Expression with an instance of F1 Work.\n\nThis property expresses the association that exists between an expression (F22) and the work that this expression conveys. The semantics of the association will be different depending on what specific subtype of F1 Work the work is an instance of. If the work is an instance of F14 Individual Work, the F22 Self-Contained Expression completely conveys the individual work. If the work is an instance of F15 Complex Work, the F22 Self-Contained Expression conveys an alternative member of the complex work.\n\nOur factual knowledge of how a given work is realised into an expression is often limited and this property makes it possible to express the association between instances of F22 Self- Contained Expression and the work it conveys without using the more developed paths.\n\nThe property R3.1 has type: E55 Type allows for specifying the role played by the referred to expression in the overall bibliographic history of the work (e.g., ‘progenitor expression’, on which all other expressions of the same work are based; ‘reference for canonical citations’, in the sense of the HuCit ontology developed by Matteo Romanello and Michele Pasin; ‘earliest draft’, ‘intermediate draft’, ‘final clean draft’, ‘princeps edition’, etc.)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R3 is realised in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#F22_Self-Contained_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPresentation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Narration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPresentation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P148_has_component"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Gum",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Gum"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Peeling_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Peeling_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Merge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Merge node is a control node that brings together multiple incoming alternate flows to accept single outgoing flow. There is no joining of tokens. Merge should not be used to synchronize concurrent flows. In any execution, only one path will be taken at a time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Merge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects an ActorWithRole to the Role the actor played in the event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#ActorWithRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Plowing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Plowing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#MOType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MOType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Beating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCulticationSubevent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#recipe",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#TemporalEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "TemporalEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:n76ae0aa07586498e8d0d6176764896acb1"
+      }
+    ]
+  },
+  {
+    "@id": "_:n76ae0aa07586498e8d0d6176764896acb1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/2006/time#Instant"
+          },
+          {
+            "@id": "http://www.w3.org/2006/time#Interval"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasExactDuration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Recipe_Step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasExactDuration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#mergesTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Merge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "mergesTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Loading_Annealer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Loading_Annealer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#MObject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents a media object, i.e. a self-contained expression that expresses the narration of a narrative. Media objects include texts, videos, audios, etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MObject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#F22_Self-Contained_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Furnace_phase",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Furnace_phase"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope note:\nThis class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures. The substance of F2 Expression is signs.\n\nExpressions cannot exist without a physical carrier, but do not depend on a specific physical carrier and can exist on one or more carriers simultaneously. Carriers may include human memory.\n\nInasmuch as the form of F2 Expression is an inherent characteristic of the F2 Expression, any change in form (e.g., from alpha-numeric notation to spoken word, a poem created in capitals and rendered in lower case) is a new F2 Expression. Similarly, changes in the intellectual conventions or instruments that are employed to express a work (e.g., translation from one language to another) result in the creation of a new F2 Expression. Thus, if a text is revised or modified, the resulting F2 Expression is considered to be a new F2 Expression. Minor changes, such as corrections of spelling and punctuation, etc., are normally considered variations within the same F2 Expression. On a practical level, the degree to which distinctions are made between variant expressions of a work will depend to some extent on the nature of the F1 Work itself, and on the anticipated needs of users.\n\nThe genre of the work may provide an indication of which features are essential to the expression. In some cases, aspects of physical form, such as typeface and page layout, are not integral to the intellectual or artistic realisation of the work as such, and therefore are not distinctive criteria for the respective expressions. For another work features such as layout may be essential. For instance, the author or a graphic designer may wrap a poem around an image.\n\nAn expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. This does not make the contents of the aggregated expressions part of this work, but only parts of the resulting expression.\n\nIf an instance of F2 Expression is of a specific form, such as text, image, etc., it may be simultaneously instantiated in the specific classes representing these forms in CIDOC CRM. Thereby one can make use of the more specific properties of these classes, such as language (which is applicable to linguistic objects only).\n\nExamples:\nThe Italian text of Dante’s ‘Divina Commedia’ as found in the authoritative critical edition ‘La Commedia secondo l’antica vulgata a cura di Giorgio Petrocchi’, Milano: Mondadori, 1966-67 (= Le Opere di Dante Alighieri, Edizione Nazionale a cura della Società Dantesca Italiana, VII, 1-4) (F22)\n\nThe Italian text of Dante’s ‘Inferno’ as found in the same edition (F22)\n\nNel mezzo del cammin di nostra vita \nmi ritrovai per una selva oscura    \nché la diritta via era smarrita [the Italian text of the first stanza of Dante’s ‘Inferno’ and ‘Divina Commedia’] (F23)\n\nThe signs which make up Christian Morgenstern’s ‘Fisches Nachtgesang’ [a poem consisting simply of “-” and “˘” signs, arranged in a determined combination] (F22)\n        "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F2 Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Gathering",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gathering"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Fertilization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Fertilization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasShedding",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Shedding"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasWeavingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasEstimatedDuration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasEstimatedDuration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCookingDimensions"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#TimeInterval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents a time interval. Equivalent to the CRM class E52 Time-Span and to the OWL Time class ProperInterval."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "TimeInterval"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Kendima",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Kendima"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasProcessingSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasProcessingSubevent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Drying_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Drying_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#used_workshop_equipment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "used_workshop_equipment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Workshop_Equipment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Event"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPackaging",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPackaging"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Packaging"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cutlery_Fork",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cutlery_Fork"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cutlery"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Kneading_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Kneading_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasTemperature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasTemperature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Draining_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Draining_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#used_mastic_tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "used_mastic_tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Soil+Cleaning",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Soil Cleaning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasAction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasAction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasDietCategoryType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasDietCategoryType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Diet_Category_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCoolingChicle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCoolingChicle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#CoolingChicle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Recipe",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasMasticSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasMasticSubevent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#Instant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Instant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://www.w3.org/2006/time#ProperInterval"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#TimePoint"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_bounding_box_max_lon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionBBox"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has bounding box max lon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPolishing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPolishing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Polishing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#endsAt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a TimeInterval to the TimePoint at which the interval ends."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "endsAt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#TimePoint"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#transistsFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Transition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "transistsFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasRecipeOriginType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasRecipeOriginType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Recipe_Origin_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#joinsFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Join"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "joinsFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glass_Making_Step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasFragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a media object to the fragments that are part of it. Equivalent to the FRBRoo property R15 has fragment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MObject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MOFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#SpatialRegionStdName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SpatialRegionStdName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Schema_Step",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Schema_Step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Glass_Making_Subprocess",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glass_Making_Subprocess"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasDistilation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Oil_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasDistilation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Distilation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticOilSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope Note:\nThis class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression.\n\nInherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard the corresponding expression as equivalent to one Individual Work.\n\nExamples: \nAbstract content of Giovanni Battista Piranesi’s ‘Carcere XVI: the pier with chains: 1st state’\n\nAbstract content of Giovanni Battista Piranesi’s ‘Carcere XVI: the pier with chains: 2nd state’ [explanation: these are two states of the same etching, but with so many and so significant differences between them that they can scarcely be recognised as conveying the same work; more generally speaking, each individual state of an etching, as a Self-Contained Expression, conveys its own F14 Individual Work (even if the differences are not so blatant as in the case of ‘Carcere XVI’), and is regarded as part of the larger, abstract F15 Complex Work that encompasses all distinct states of the same etching]\n\nAbstract content of the recording made of performances of Johann Sebastian Bach’s ‘Toccata in C minor BWV 911’ by Glenn Gould on May 15 & 16, 1979, in Toronto, Eaton’s Auditorium"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F14 Individual Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#F22_Self-Contained_Expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope note:\nThis class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole. The quality of wholeness reflects the intention of its creator that this expression should convey the concept of the work. Such a whole can in turn be part of a larger whole.\n\nInherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. A Self-Contained Expression may contain expressions or parts of expressions from other work, such as citations or items collected in anthologies. Even though they are incorporated in the Self-Contained Expression, they are not regarded as becoming members of the expressed container work by their inclusion in the expression, but are rather regarded as foreign or referred to elements.\n\nF22 Self-Contained Expression can be distinguished from F23 Expression Fragment in that an F23 Expression Fragment was not intended by its creator to make sense by itself. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard an expression as self-contained.\n\nExamples:\nThe Italian text of Dante’s ‘Inferno’ as found in the authoritative critical edition La Commedia secondo l’antica vulgata a cura di Giorgio Petrocchi, Milano: Mondadori, 1966-67 (= Le Opere di Dante Alighieri, Edizione Nazionale a cura della Società Dantesca Italiana, VII, 1-4)\n\nThe musical notation of Franz Schubert’s lied known as ‘Ave Maria’\n\nThe musical notation of Franz Schubert’s lieder cycle entitled ‘Seven Songs after Walter Scott’s The Lady of the Lake’, of which ‘Ave Maria’ is a distinct part\n\nThe musical notation of Franz Liszt’s piano transcription of Franz Schubert’s lied known as ‘Ave Maria’\n\nThe musical notation of fragments of the unfinished string quartet sketched by Arnold Schoenberg in 1926"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F22 Self-Contained Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPredicate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Alternative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPredicate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Edible_Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Edible_Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Product"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasFabula",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a narrative to its fabula."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Narrative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasFabula"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Fabula"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cooking_Ingredients",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cooking_Ingredients"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/publisher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#MOFragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents a fragment of a media object, i.e. a piece of text, video, audio or other media that is a subpart of the media object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "MOFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Weighting_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Weighting_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cutlery_Spoon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cutlery_Spoon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cutlery"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Necking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Necking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Collecting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Collecting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#SpatialRegionBBox",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "SpatialRegionBBox"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Fabula",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class represents the fabula of a narrative, i.e. the sequence of events in chronological order."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Fabula"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E4_Period"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Kitchen_Utensils",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Kitchen_Utensils"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Laying",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Laying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Blowpipe_cleaning",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Blowpipe_cleaning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cutlery_Knife",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cutlery_Knife"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cutlery"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Batching_furnace",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Batching_furnace"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#correspondsTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "correspondsTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Glass_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glass_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasRecipeCategoryType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasRecipeCategoryType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Recipe_Category_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Transition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Transition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasSubStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasSubStep"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P69_is_associated_with"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Picking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Chewing_Gum_Drying",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Chewing_Gum_Drying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Tsimbima",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Tsimbima"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasEstimatedServings",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasEstimatedServings"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCookingDimensions"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#beginsAt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a TimeInterval to the TimePoint at which the interval begins."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "beginsAt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#TimePoint"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Weaving_Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Finishing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Finishing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Join",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Join node is a control node that has multiple incoming edges and one outgoing edge and is used to synchronize incoming concurrent flows. Join nodes are introduced to support parallelism in activities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Join"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasMasticChewingGumSubevent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasMixtureProduction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasMixtureProduction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#ChicleMixtureProduction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pharmaceutical_Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pharmaceutical_Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Product"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Presentation+Segment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "A presentation Segment holds information about a media object, channel etc that should be used in a specific presentation at a specific point in time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Presentation Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#recipe_step",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "recipe_step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#startsAtPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation+Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "startsAtPoint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope note:\nThis property associates the fragment of an expression and the expression of which it is a fragment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R15 has fragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPlanting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPlanting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Planting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Flattening",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Flattening"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pilot_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pilot Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasOrder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasOrder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPicking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Picking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasWeavingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Black_Mastic",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Black_Mastic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#endsAtPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation+Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "endsAtPoint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Tap_n_Chill",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Tap_n_Chill"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasChewingGumDrying",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasChewingGumDrying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Chewing_Gum_Drying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Coating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Coating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Scope Note:\nThis property associates an F14 Individual Work with the unique F22 Self-Contained Expression that completely conveys it. It is a shortcut for the more developed path: F14 Individual Work R19i was realised through F28 Expression Creation R17 created F22 Self-Contained Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R9 is realised in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#F22_Self-Contained_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPresentationSegment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPresentationSegment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation+Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P148_has_component"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Blender",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Blender"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasFertilization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasFertilization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Fertilization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_longitude",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionPoint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has longitude"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#refersTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects a media object fragment to the event it describes. Equivalent to the CRM property P129 is about."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MOFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "refersTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasMasticOilSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Oil_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasMasticOilSubevent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Oil_Production"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasMasticSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#FormingGumDragees",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "FormingGumDragees"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Loom_Beater",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Represents all types of Beaters used in Looms during Weaving activities"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Loom Beater"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Event",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents an event. Equivalent to the CRM class E5 Event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Event"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasDrying",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasDrying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Drying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasProcessingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Shaping",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Shaping"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasOrderType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasOrderType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Order_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#refersToMOFragmentSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#MOFragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "refersToMOFragmentSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Order_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Order_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#refersToChannel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation+Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "refersToChannel"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Recipe_Category_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recipe_Category_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Planting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Planting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Hand_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Hand_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_polygonal_representation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionPolygon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has polygonal representation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Drying",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Drying"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Pitta",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Pitta"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_bounding_box_max_lat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionBBox"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has bounding box max lat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasSpatialRegion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property connects an event to its spatial region"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasSpatialRegion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCleaningWithWater",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCleaningWithWater"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#CleaningWithWater"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasProcessingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Classification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasDestructionDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasDestructionDate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#TimeInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#joinsTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Join"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "joinsTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCookingDimensions",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCookingDimensions"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#used_hand_tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "used_hand_tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Hand_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasNarration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This property connect a narrative to the narration that expresses it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Narrative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasNarration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Narration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P148_has_component"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Recipe_Origin_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recipe_Origin_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasNumericValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasNumericValue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasAlternativeDestination",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Alternative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasAlternativeDestination"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Irrigation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Irrigation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2006/time#Interval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Interval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2006/time#TemporalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cutlery",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cutlery"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Bench_organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Bench_organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#isCausedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This property connects an event to something that caused it. This property can be used to connect events that in normal discourse are predicated to have a cause-effect relation, e.g. the eruption of the Vesuvius caused the destruction of Pompeii."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "isCausedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Preparation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Preparation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Processing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasIrrigation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasIrrigation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Irrigation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Drops",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Drops"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_coordinate_system",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has coordinate system"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Slotted_Ladle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Slotted_Ladle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Kitchen_Utensils"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Workshop_Equipment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Workshop_Equipment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Oven_Pan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Oven_Pan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Loom_Shuttle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Represents all types of Shuttles used in Looms during Weaving activities"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Loom Shuttle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasTsimbima",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Processing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasTsimbima"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Tsimbima"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasProcessingSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cooking_Device",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cooking_Device"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Diet_Category_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Diet_Category_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Shape_n_Blow",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Shape_n_Blow"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Paddling",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Paddling"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pot",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_latitude",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionPoint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has latitude"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasWeavingSubevent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Weaving_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Agricultural_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Agricultural_Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Tool"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Bubbling",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Bubbling"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Narration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class represents the narration of a narrative, i.e. an individual work that tells the events of the narrative through some form of media (text, video, audio, etc.)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cosmetic_Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cosmetic_Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Product"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Cooking_Activity_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cooking_Activity_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#branchesFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Branch"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "branchesFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Prunning",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Prunning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasNutritionFactDimesion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasNutritionFactDimesion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCookingDimensions"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCreator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCreator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Verification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Verification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Glass_Making_Step"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#recipe"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasRating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCookingDimensions"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Weaving_Tool",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class represents all tools used in the Weaving activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Weaving Tool"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPrunning",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPrunning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Prunning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Sieving",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Sieving"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Mastic_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasPresentationDuration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Presentation+Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasPresentationDuration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Pressure_Cooker",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Pressure_Cooker"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cooking_Device"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#hasCollecting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Cultivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "hasCollecting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#Collecting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#hasCulticationSubevent"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Schema",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Schema"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#Mastic_Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Mastic_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://dlnarratives.eu/ontology#has_place_IRI",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://dlnarratives.eu/ontology#SpatialRegionStdName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has place IRI"
+      }
+    ]
+  }
+]

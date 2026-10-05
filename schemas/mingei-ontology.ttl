@@ -1,0 +1,2073 @@
+@prefix : <https://dlnarratives.eu/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://dlnarratives.eu/ontology> .
+
+<https://dlnarratives.eu/ontology> rdf:type owl:Ontology ;
+                                    owl:imports <http://www.cidoc-crm.org/cidoc-crm/> ;
+                                    <http://purl.org/dc/elements/1.1/creator> "Carlo Meghini, Valentina Bartalesi, Daniele Metilli, Filippo Benedetti" ;
+                                    <http://purl.org/dc/elements/1.1/date> "2019-08-08" ;
+                                    <http://purl.org/dc/elements/1.1/publisher> "ISTI-CNR" ;
+                                    rdfs:comment "The ontology used to represent narratives in the Mingei project" ;
+                                    rdfs:label "Mingei Narrative Ontology" ;
+                                    owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  https://dlnarratives.eu/ontology#hasRole
+:hasRole rdf:type owl:AnnotationProperty ;
+         rdfs:comment "This property connects an ActorWithRole to the Role the actor played in the event."@en ;
+         rdfs:label "hasRole"@en ;
+         rdfs:domain :ActorWithRole .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment> rdf:type owl:ObjectProperty ,
+                                                                        owl:TransitiveProperty ;
+                                                               rdfs:domain <http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> ;
+                                                               rdfs:range <http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment> ;
+                                                               rdfs:comment """Scope note:
+This property associates the fragment of an expression and the expression of which it is a fragment."""@en ;
+                                                               rdfs:label "R15 has fragment"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in
+<http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> ;
+                                                                rdfs:range :F22_Self-Contained_Expression ;
+                                                                rdfs:comment """Scope note:
+This property associates an instance of F22 Self-Contained Expression with an instance of F1 Work.
+
+This property expresses the association that exists between an expression (F22) and the work that this expression conveys. The semantics of the association will be different depending on what specific subtype of F1 Work the work is an instance of. If the work is an instance of F14 Individual Work, the F22 Self-Contained Expression completely conveys the individual work. If the work is an instance of F15 Complex Work, the F22 Self-Contained Expression conveys an alternative member of the complex work.
+
+Our factual knowledge of how a given work is realised into an expression is often limited and this property makes it possible to express the association between instances of F22 Self- Contained Expression and the work it conveys without using the more developed paths.
+
+The property R3.1 has type: E55 Type allows for specifying the role played by the referred to expression in the overall bibliographic history of the work (e.g., ‘progenitor expression’, on which all other expressions of the same work are based; ‘reference for canonical citations’, in the sense of the HuCit ontology developed by Matteo Romanello and Michele Pasin; ‘earliest draft’, ‘intermediate draft’, ‘final clean draft’, ‘princeps edition’, etc.)."""@en ;
+                                                                rdfs:label "R3 is realised in"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in
+<http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in> ;
+                                                                rdfs:domain <http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work> ;
+                                                                rdfs:range :F22_Self-Contained_Expression ;
+                                                                rdfs:comment """Scope Note:
+This property associates an F14 Individual Work with the unique F22 Self-Contained Expression that completely conveys it. It is a shortcut for the more developed path: F14 Individual Work R19i was realised through F28 Expression Creation R17 created F22 Self-Contained Expression."""@en ;
+                                                                rdfs:label "R9 is realised in"@en .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type
+<http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type> rdf:type owl:ObjectProperty ;
+                                                              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P129_is_about
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P148_has_component
+<http://www.cidoc-crm.org/cidoc-crm/P148_has_component> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by
+<http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object
+<http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> rdf:type owl:ObjectProperty ;
+                                                              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> ;
+                                                              rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+                                                              rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of
+<http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P9_consists_of
+<http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2006/time#hasBeginning
+<http://www.w3.org/2006/time#hasBeginning> rdf:type owl:ObjectProperty ;
+                                           owl:equivalentProperty :beginsAt ;
+                                           rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                           rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                           rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                           rdfs:comment "Beginning of a temporal entity"@en ;
+                                           rdfs:label "has beginning"@en .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+<http://www.w3.org/2006/time#hasEnd> rdf:type owl:ObjectProperty ;
+                                     owl:equivalentProperty :endsAt ;
+                                     rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                     rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                     rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                     rdfs:comment "End of a temporal entity"@en ;
+                                     rdfs:label "has end"@en .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      rdfs:comment "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+                                      rdfs:label "has time"@en .
+
+
+###  https://dlnarratives.eu/ontology#beginsAt
+:beginsAt rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+          rdfs:range :TimePoint ;
+          rdfs:comment "This property connects a TimeInterval to the TimePoint at which the interval begins."@en ;
+          rdfs:label "beginsAt"@en .
+
+
+###  https://dlnarratives.eu/ontology#branchesFrom
+:branchesFrom rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+              rdfs:domain :Branch ;
+              rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+              rdfs:label "branchesFrom"@en .
+
+
+###  https://dlnarratives.eu/ontology#correspondsTo
+:correspondsTo rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+               rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+               rdfs:label "correspondsTo"@en .
+
+
+###  https://dlnarratives.eu/ontology#endsAt
+:endsAt rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+        rdfs:range :TimePoint ;
+        rdfs:comment "This property connects a TimeInterval to the TimePoint at which the interval ends."@en ;
+        rdfs:label "endsAt"@en .
+
+
+###  https://dlnarratives.eu/ontology#forksFrom
+:forksFrom rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+           rdfs:domain :Fork ;
+           rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+           rdfs:label "forksFrom"@en .
+
+
+###  https://dlnarratives.eu/ontology#forksTo
+:forksTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+         rdfs:domain :Fork ;
+         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+         rdfs:label "forksTo"@en .
+
+
+###  https://dlnarratives.eu/ontology#hadParticipant
+:hadParticipant rdf:type owl:ObjectProperty ;
+                rdfs:domain :Event ;
+                rdfs:range :ActorWithRole ;
+                rdfs:comment "This property relates an event with an instance of the class ActorWithRole." ;
+                rdfs:label "hadParticipant" .
+
+
+###  https://dlnarratives.eu/ontology#hasAction
+:hasAction rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+           rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+           rdfs:label "hasAction"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasAlternative
+:hasAlternative rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+                rdfs:domain :Branch ;
+                rdfs:range :Alternative ;
+                rdfs:label "hasAlternative"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasAlternativeDestination
+:hasAlternativeDestination rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+                           rdfs:domain :Alternative ;
+                           rdfs:label "hasAlternativeDestination"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasBeating
+:hasBeating rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasWeavingSubevent ;
+            rdfs:domain :Weaving ;
+            rdfs:range :Beating .
+
+
+###  https://dlnarratives.eu/ontology#hasChewingGumDrying
+:hasChewingGumDrying rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+                     rdfs:domain :Mastic_Chewing_Gum_Production ;
+                     rdfs:range :Chewing_Gum_Drying ;
+                     rdfs:label "hasChewingGumDrying"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasClassification
+:hasClassification rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasProcessingSubevent ;
+                   rdfs:domain :Processing ;
+                   rdfs:range :Classification ;
+                   rdfs:label "hasClassification"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCleaningWithWater
+:hasCleaningWithWater rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasProcessingSubevent ;
+                      rdfs:domain :Processing ;
+                      rdfs:range :CleaningWithWater ;
+                      rdfs:label "hasCleaningWithWater"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCoating
+:hasCoating rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+            rdfs:domain :Mastic_Chewing_Gum_Production ;
+            rdfs:range :Coating ;
+            rdfs:label "hasCoating"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCollecting
+:hasCollecting rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasCulticationSubevent ;
+               rdfs:domain :Cultivation ;
+               rdfs:range :Collecting ;
+               rdfs:label "hasCollecting"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasContent
+:hasContent rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in> ;
+            rdfs:domain :Narration ;
+            rdfs:range :MObject ;
+            rdfs:comment "This property connects a Narration to its content (a MediaObject). Equivalent to the FRBRoo property R9 is realised in."@en ;
+            rdfs:label "hasContent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCookingDimensions
+:hasCookingDimensions rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> ;
+                      rdfs:domain :recipe ;
+                      rdfs:label "hasCookingDimensions"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCoolingChicle
+:hasCoolingChicle rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+                  rdfs:domain :Mastic_Chewing_Gum_Production ;
+                  rdfs:range :CoolingChicle ;
+                  rdfs:label "hasCoolingChicle"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCreationDate
+:hasCreationDate rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+                 rdfs:range :TimeInterval ;
+                 rdfs:label "hasCreationDate" .
+
+
+###  https://dlnarratives.eu/ontology#hasCreator
+:hasCreator rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> ;
+            rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
+            rdfs:label "hasCreator"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasCulticationSubevent
+:hasCulticationSubevent rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasMasticSubevent ;
+                        rdfs:domain :Cultivation ;
+                        rdfs:range :Cultivation ;
+                        rdfs:label "hasCulticationSubevent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasDestructionDate
+:hasDestructionDate rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+                    rdfs:range :TimeInterval ;
+                    rdfs:label "hasDestructionDate"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasDietCategoryType
+:hasDietCategoryType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+                     rdfs:domain :recipe ;
+                     rdfs:range :Diet_Category_Type ;
+                     rdfs:label "hasDietCategoryType"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasDifficulty
+:hasDifficulty rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasCookingDimensions ;
+               rdfs:domain :recipe ;
+               rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+               rdfs:label "hasDifficulty"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasDistilation
+:hasDistilation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasMasticOilSubevent ;
+                rdfs:domain :Mastic_Oil_Production ;
+                rdfs:range :Distilation ;
+                rdfs:label "hasDistilation"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasDrying
+:hasDrying rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasProcessingSubevent ;
+           rdfs:domain :Processing ;
+           rdfs:range :Drying ;
+           rdfs:label "hasDrying"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasEstimatedDuration
+:hasEstimatedDuration rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasCookingDimensions ;
+                      rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+                      rdfs:label "hasEstimatedDuration"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasEstimatedServings
+:hasEstimatedServings rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasCookingDimensions ;
+                      rdfs:domain :recipe ;
+                      rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+                      rdfs:label "hasEstimatedServings"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> ;
+          rdfs:domain :Fabula ;
+          rdfs:range :Event ;
+          rdfs:comment "This property connects a Fabula to its Events. Equivalent to the CRM property P9 consists of."@en ;
+          rdfs:label "hasEvent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasExactDuration
+:hasExactDuration rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Recipe_Step ;
+                  rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+                  rdfs:label "hasExactDuration"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasFabula
+:hasFabula rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> ;
+           rdfs:domain :Narrative ;
+           rdfs:range :Fabula ;
+           rdfs:comment "This property connects a narrative to its fabula."@en ;
+           rdfs:label "hasFabula"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasFertilization
+:hasFertilization rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasCulticationSubevent ;
+                  rdfs:domain :Cultivation ;
+                  rdfs:range :Fertilization ;
+                  rdfs:label "hasFertilization"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasFormingGumDragees
+:hasFormingGumDragees rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+                      rdfs:domain :Mastic_Chewing_Gum_Production ;
+                      rdfs:range :FormingGumDragees ;
+                      rdfs:label "hasFormingGumDragees"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasFragment
+:hasFragment rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment> ;
+             rdfs:domain :MObject ;
+             rdfs:range :MOFragment ;
+             rdfs:comment "This property connects a media object to the fragments that are part of it. Equivalent to the FRBRoo property R15 has fragment."@en ;
+             rdfs:label "hasFragment"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasGlassMakingStep
+:hasGlassMakingStep rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasSubevent ;
+                    rdfs:domain :Glass_Making_Subprocess ;
+                    rdfs:range :Glass_Making_Step ;
+                    rdfs:label "hasGlassMakingStep"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasGlassMakingSubprocess
+:hasGlassMakingSubprocess rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasSubevent ;
+                          rdfs:domain :Glass_Activity ;
+                          rdfs:range :Glass_Making_Subprocess ;
+                          rdfs:label "hasGlassMakingSubprocess"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasIrrigation
+:hasIrrigation rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasCulticationSubevent ;
+               rdfs:domain :Cultivation ;
+               rdfs:range :Irrigation ;
+               rdfs:label "hasIrrigation"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasKendima
+:hasKendima rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasCulticationSubevent ;
+            rdfs:domain :Cultivation ;
+            rdfs:range :Kendima ;
+            rdfs:label "hasKendima"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasMOType
+:hasMOType rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+           rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
+           rdfs:label "hasMOType"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasMasticChewingGumSubevent
+:hasMasticChewingGumSubevent rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :hasMasticSubevent ;
+                             rdfs:domain :Mastic_Chewing_Gum_Production ;
+                             rdfs:range :Mastic_Chewing_Gum_Production ;
+                             rdfs:label "hasMasticChewingGumSubevent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasMasticOilSubevent
+:hasMasticOilSubevent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasMasticSubevent ;
+                      rdfs:domain :Mastic_Oil_Production ;
+                      rdfs:range :Mastic_Oil_Production ;
+                      rdfs:label "hasMasticOilSubevent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasMasticSubevent
+:hasMasticSubevent rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasSubevent ;
+                   rdfs:domain :Mastic_Activity ;
+                   rdfs:range :Mastic_Activity ;
+                   rdfs:label "hasMasticSubevent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasMixtureProduction
+:hasMixtureProduction rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+                      rdfs:domain :Mastic_Chewing_Gum_Production ;
+                      rdfs:range :ChicleMixtureProduction ;
+                      rdfs:label "hasMixtureProduction"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasNarration
+:hasNarration rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> ;
+              rdfs:domain :Narrative ;
+              rdfs:range :Narration ;
+              rdfs:comment "This property connect a narrative to the narration that expresses it." ;
+              rdfs:label "hasNarration"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasNutritionFactDimesion
+:hasNutritionFactDimesion rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasCookingDimensions ;
+                          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+                          rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+                          rdfs:label "hasNutritionFactDimesion"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasOrderType
+:hasOrderType rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+              rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+              rdfs:range :Order_Type ;
+              rdfs:label "hasOrderType"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPackaging
+:hasPackaging rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+              rdfs:domain :Mastic_Chewing_Gum_Production ;
+              rdfs:range :Packaging ;
+              rdfs:label "hasPackaging"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPartWeavingTool
+:hasPartWeavingTool rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> ;
+                    rdfs:domain :Weaving_Tool ;
+                    rdfs:range :Weaving_Tool ;
+                    rdfs:comment """This property connects a weaving tool to its parts. 
+Examples:
+
+- Loom hasPartWeaving Pedal 
+- Loom hasPartWeaving Shuttle
+- Shuttle hasPartWeaving Bobbin""" .
+
+
+###  https://dlnarratives.eu/ontology#hasPicking
+:hasPicking rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasWeavingSubevent ;
+            rdfs:domain :Weaving ;
+            rdfs:range :Picking .
+
+
+###  https://dlnarratives.eu/ontology#hasPilotType
+:hasPilotType rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+              rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
+              rdfs:label "hasPilotType"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPlanting
+:hasPlanting rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasCulticationSubevent ;
+             rdfs:domain :Cultivation ;
+             rdfs:range :Planting ;
+             rdfs:label "hasPlanting"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPlowing
+:hasPlowing rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasCulticationSubevent ;
+            rdfs:domain :Cultivation ;
+            rdfs:range :Plowing ;
+            rdfs:label "hasPlowing"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPolishing
+:hasPolishing rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasMasticChewingGumSubevent ;
+              rdfs:domain :Mastic_Chewing_Gum_Production ;
+              rdfs:range :Polishing ;
+              rdfs:label "hasPolishing"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPresentation
+:hasPresentation rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> ;
+                 rdfs:domain :Narration ;
+                 rdfs:range :Presentation ;
+                 rdfs:label "hasPresentation"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPresentationSegment
+:hasPresentationSegment rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> ;
+                        rdfs:domain :Presentation ;
+                        rdfs:range <https://dlnarratives.eu/ontology#Presentation+Segment> ;
+                        rdfs:label "hasPresentationSegment"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasProcessingSubevent
+:hasProcessingSubevent rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasMasticSubevent ;
+                       rdfs:domain :Processing ;
+                       rdfs:range :Processing ;
+                       rdfs:label "hasProcessingSubevent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPrunning
+:hasPrunning rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasCulticationSubevent ;
+             rdfs:domain :Cultivation ;
+             rdfs:range :Prunning ;
+             rdfs:label "hasPrunning"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasCookingDimensions ;
+           rdfs:domain :recipe ;
+           rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+           rdfs:label "hasRating"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasRecipeCategoryType
+:hasRecipeCategoryType rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+                       rdfs:domain :recipe ;
+                       rdfs:range :Recipe_Category_Type ;
+                       rdfs:label "hasRecipeCategoryType"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasRecipeOriginType
+:hasRecipeOriginType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+                     rdfs:domain :recipe ;
+                     rdfs:range :Recipe_Origin_Type ;
+                     rdfs:label "hasRecipeOriginType"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasRecipeStep
+:hasRecipeStep rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P69_is_associated_with> ;
+               rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+               rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+               rdfs:label "hasRecipeStep"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasShedding
+:hasShedding rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasWeavingSubevent ;
+             rdfs:domain :Weaving ;
+             rdfs:range :Shedding .
+
+
+###  https://dlnarratives.eu/ontology#hasSieving
+:hasSieving rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasProcessingSubevent ;
+            rdfs:domain :Processing ;
+            rdfs:range :Sieving ;
+            rdfs:label "hasSieving"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasSoilCleaning
+:hasSoilCleaning rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasCulticationSubevent ;
+                 rdfs:domain :Cultivation ;
+                 rdfs:range <https://dlnarratives.eu/ontology#Soil+Cleaning> ;
+                 rdfs:label "hasSoilCleaning"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasSpatialRegion
+:hasSpatialRegion rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+                  rdfs:range :SpatialRegion ;
+                  rdfs:comment "This property connects an event to its spatial region"@en ;
+                  rdfs:label "hasSpatialRegion"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasSubStep
+:hasSubStep rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P69_is_associated_with> ;
+            rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+            rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+            rdfs:label "hasSubStep"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasSubevent
+:hasSubevent rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> ;
+             rdfs:domain :Event ;
+             rdfs:range :Event ;
+             rdfs:comment "This property connects an Event to other Events that are part of it. Equivalent to the CRM property P9 consists of."@en ;
+             rdfs:label "hasSubevent"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasSubject
+:hasSubject rdf:type owl:ObjectProperty ;
+            rdfs:domain :ActorWithRole ;
+            rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
+            rdfs:comment "This property relates the class ActorWithRole with the class E39 Actor." ;
+            rdfs:label "hasSubject" .
+
+
+###  https://dlnarratives.eu/ontology#hasTemperature
+:hasTemperature rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
+                rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+                rdfs:label "hasTemperature"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasTsimbima
+:hasTsimbima rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasProcessingSubevent ;
+             rdfs:domain :Processing ;
+             rdfs:range :Tsimbima ;
+             rdfs:label "hasTsimbima"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasWeavingSubevent
+:hasWeavingSubevent rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasSubevent ;
+                    rdfs:domain :Weaving_Activity ;
+                    rdfs:range :Weaving_Activity .
+
+
+###  https://dlnarratives.eu/ontology#has_place_IRI
+:has_place_IRI rdf:type owl:ObjectProperty ;
+               rdfs:domain :SpatialRegionStdName ;
+               rdfs:label "has place IRI"@en .
+
+
+###  https://dlnarratives.eu/ontology#isCausedBy
+:isCausedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Event ;
+            rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
+            rdfs:comment "This property connects an event to something that caused it. This property can be used to connect events that in normal discourse are predicated to have a cause-effect relation, e.g. the eruption of the Vesuvius caused the destruction of Pompeii." ;
+            rdfs:label "isCausedBy" .
+
+
+###  https://dlnarratives.eu/ontology#joinsFrom
+:joinsFrom rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+           rdfs:domain :Join ;
+           rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+           rdfs:label "joinsFrom"@en .
+
+
+###  https://dlnarratives.eu/ontology#joinsTo
+:joinsTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+         rdfs:domain :Join ;
+         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+         rdfs:label "joinsTo"@en .
+
+
+###  https://dlnarratives.eu/ontology#mergesFrom
+:mergesFrom rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+            rdfs:domain :Merge ;
+            rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+            rdfs:label "mergesFrom"@en .
+
+
+###  https://dlnarratives.eu/ontology#mergesTo
+:mergesTo rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+          rdfs:domain :Merge ;
+          rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+          rdfs:label "mergesTo"@en .
+
+
+###  https://dlnarratives.eu/ontology#refersTo
+:refersTo rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> ;
+          rdfs:domain :MOFragment ;
+          rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+          rdfs:comment "This property connects a media object fragment to the event it describes. Equivalent to the CRM property P129 is about."@en ;
+          rdfs:label "refersTo"@en .
+
+
+###  https://dlnarratives.eu/ontology#refersToMOFragment
+:refersToMOFragment rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> ;
+                    rdfs:domain <https://dlnarratives.eu/ontology#Presentation+Segment> ;
+                    rdfs:range :MOFragment ;
+                    rdfs:comment "This property is used to connect a presentation segmnent with the MOFragment it refers to"^^xsd:string ;
+                    rdfs:label "refersToMOFragment"@en .
+
+
+###  https://dlnarratives.eu/ontology#transistsFrom
+:transistsFrom rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+               rdfs:domain :Transition ;
+               rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+               rdfs:label "transistsFrom"@en .
+
+
+###  https://dlnarratives.eu/ontology#transistsTo
+:transistsTo rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> ;
+             rdfs:domain :Transition ;
+             rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+             rdfs:label "transistsTo"@en .
+
+
+###  https://dlnarratives.eu/ontology#usedMastic
+:usedMastic rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type> ;
+            rdfs:domain :Mastic_Activity ;
+            rdfs:range :Mastic ;
+            rdfs:label "usedMastic"@en .
+
+
+###  https://dlnarratives.eu/ontology#used_hand_tool
+:used_hand_tool rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> ;
+                rdfs:domain :Glass_Activity ;
+                rdfs:range :Hand_Tool ;
+                rdfs:label "used_hand_tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#used_mastic_tool
+:used_mastic_tool rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> ;
+                  rdfs:domain :Mastic_Activity ;
+                  rdfs:range :Mastic_Tool ;
+                  rdfs:label "used_mastic_tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#used_workshop_equipment
+:used_workshop_equipment rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> ;
+                         rdfs:domain :Glass_Activity ;
+                         rdfs:range :Workshop_Equipment ;
+                         rdfs:label "used_workshop_equipment"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://dlnarratives.eu/ontology#endsAtPoint
+:endsAtPoint rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain <https://dlnarratives.eu/ontology#Presentation+Segment> ;
+             rdfs:range xsd:float ;
+             rdfs:label "endsAtPoint"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasNumericValue
+:hasNumericValue rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> ;
+                 rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "hasNumericValue"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasOrder
+:hasOrder rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ,
+                      <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+          rdfs:range xsd:int ;
+          rdfs:label "hasOrder"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPredicate
+:hasPredicate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Alternative ;
+              rdfs:range xsd:string ;
+              rdfs:label "hasPredicate"@en .
+
+
+###  https://dlnarratives.eu/ontology#hasPresentationDuration
+:hasPresentationDuration rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain <https://dlnarratives.eu/ontology#Presentation+Segment> ;
+                         rdfs:range xsd:float ;
+                         rdfs:label "hasPresentationDuration"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_bounding_box_max_lat
+:has_bounding_box_max_lat rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :SpatialRegionBBox ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:label "has bounding box max lat"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_bounding_box_max_lon
+:has_bounding_box_max_lon rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :SpatialRegionBBox ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:label "has bounding box max lon"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_bounding_box_min_lat
+:has_bounding_box_min_lat rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :SpatialRegionBBox ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:label "has bounding box min lat"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_bounding_box_min_lon
+:has_bounding_box_min_lon rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :SpatialRegionBBox ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:label "has bounding box min lon"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_coordinate_system
+:has_coordinate_system rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :SpatialRegion ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "has coordinate system"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_latitude
+:has_latitude rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :SpatialRegionPoint ;
+              rdfs:range xsd:decimal ;
+              rdfs:label "has latitude"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_longitude
+:has_longitude rdf:type owl:DatatypeProperty ;
+               rdfs:domain :SpatialRegionPoint ;
+               rdfs:range xsd:decimal ;
+               rdfs:label "has longitude"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_place_name
+:has_place_name rdf:type owl:DatatypeProperty ;
+                rdfs:domain :SpatialRegion ;
+                rdfs:range xsd:string ;
+                rdfs:label "has place name"@en .
+
+
+###  https://dlnarratives.eu/ontology#has_polygonal_representation
+:has_polygonal_representation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf owl:topDataProperty ;
+                              rdfs:domain :SpatialRegionPolygon ;
+                              rdfs:label "has polygonal representation"@en .
+
+
+###  https://dlnarratives.eu/ontology#refersToChannel
+:refersToChannel rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain <https://dlnarratives.eu/ontology#Presentation+Segment> ;
+                 rdfs:range xsd:int ;
+                 rdfs:label "refersToChannel"@en .
+
+
+###  https://dlnarratives.eu/ontology#refersToMOFragmentSource
+:refersToMOFragmentSource rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :MOFragment ;
+                          rdfs:range xsd:anyURI ;
+                          rdfs:label "refersToMOFragmentSource"@en .
+
+
+###  https://dlnarratives.eu/ontology#refersToMOSource
+:refersToMOSource rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :MObject ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:label "refersToMOSource"@en .
+
+
+###  https://dlnarratives.eu/ontology#startsAtPoint
+:startsAtPoint rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain <https://dlnarratives.eu/ontology#Presentation+Segment> ;
+               rdfs:range xsd:float ;
+               rdfs:label "startsAtPoint"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> ;
+                                                                  rdfs:comment """Scope Note:
+This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression.
+
+Inherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard the corresponding expression as equivalent to one Individual Work.
+
+Examples: 
+Abstract content of Giovanni Battista Piranesi’s ‘Carcere XVI: the pier with chains: 1st state’
+
+Abstract content of Giovanni Battista Piranesi’s ‘Carcere XVI: the pier with chains: 2nd state’ [explanation: these are two states of the same etching, but with so many and so significant differences between them that they can scarcely be recognised as conveying the same work; more generally speaking, each individual state of an etching, as a Self-Contained Expression, conveys its own F14 Individual Work (even if the differences are not so blatant as in the case of ‘Carcere XVI’), and is regarded as part of the larger, abstract F15 Complex Work that encompasses all distinct states of the same etching]
+
+Abstract content of the recording made of performances of Johann Sebastian Bach’s ‘Toccata in C minor BWV 911’ by Glenn Gould on May 15 & 16, 1979, in Toronto, Eaton’s Auditorium"""@en ;
+                                                                  rdfs:label "F14 Individual Work"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> ;
+                                                      rdfs:comment """Scope note:
+				This class comprises distinct concepts or combinations of concepts identified in artistic and intellectual expressions, such as poems, stories or musical compositions. Such concepts may appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea. A Work may be elaborated by one or more Actors simultaneously or over time. The substance of Work is ideas. A Work may have members that are works in their own right.
+				
+				A Work can be either individual or complex. If it is individual its concept is completely realised in a single F22 Self-Contained Expression. If it is complex its concept is embedded in an F15 Complex Work. An F15 Complex Work consists of alternative members that are either F15 Complex Works themselves or F14 Individual Works.
+				
+				A Work is the product of an intellectual process of one or more persons, yet only indirect evidence about it is at our hands. This can be contextual information such as the existence of an order for a work, reflections of the creators themselves that are documented somewhere, and finally the expressions of the work created. As ideas normally take shape during discussion, elaboration and implementation, it is not reasonable to assume that a work starts with a complete concept. In some cases, it can be very difficult or impossible to define the whole of the concept of a work at a particular time. The objective evidence for such a notion can only be based on a stage of expressions at a given time. In this sense, the sets of ideas that constitute particular self-contained expressions may be regarded as a kind of “snap-shot” of a work.
+				
+				A Work may include the concept of aggregating expressions of other works into a new expression. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. This does not make the contents of the aggregated expressions part of this work, but only parts of the resulting expression.
+				
+Examples:
+Abstract content of Giovanni Battista Piranesi’s ‘Carcere XVI: the pier with chains: 1st state’ (F14)
+
+‘La Porte de l’Enfer’ by Auguste Rodin conceived between 1880 and 1917 (F15)
+
+‘Hamlet’ by William Shakespeare (F15)  
+        """@en ;
+                                                      rdfs:label "F1 Work"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment
+<http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> ;
+                                                                      rdfs:comment """Scope note:
+This class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.
+
+The existence of an instance of F23 Expression Fragment can be due to accident, such as loss of material over time, e.g. the only remaining manuscript of an antique text being partially eaten by worms, or due to deliberate isolation, such as excerpts taken from a text by the compiler of a collection of excerpts.
+
+An F23 Expression Fragment is only identified with respect to its occurrence in a known or assumed whole. The size of an instance of F23 Expression Fragment ranges from more than 99% of an instance of F22 Self-Contained Expression to tiny bits (a few words from a text, one bar from a musical composition, one detail from a still image, a two-second clip from a movie, etc.).
+
+Examples:
+The only remnants of Sappho’s poems 
+
+The words ‘Beati pauperes spiritu’ (excerpted from Matthew’s Gospel 5,3 in Latin translation)       
+        """@en ;
+                                                                      rdfs:label "F23 Expression Fragment"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+                                                            rdfs:comment """Scope note:
+This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures. The substance of F2 Expression is signs.
+
+Expressions cannot exist without a physical carrier, but do not depend on a specific physical carrier and can exist on one or more carriers simultaneously. Carriers may include human memory.
+
+Inasmuch as the form of F2 Expression is an inherent characteristic of the F2 Expression, any change in form (e.g., from alpha-numeric notation to spoken word, a poem created in capitals and rendered in lower case) is a new F2 Expression. Similarly, changes in the intellectual conventions or instruments that are employed to express a work (e.g., translation from one language to another) result in the creation of a new F2 Expression. Thus, if a text is revised or modified, the resulting F2 Expression is considered to be a new F2 Expression. Minor changes, such as corrections of spelling and punctuation, etc., are normally considered variations within the same F2 Expression. On a practical level, the degree to which distinctions are made between variant expressions of a work will depend to some extent on the nature of the F1 Work itself, and on the anticipated needs of users.
+
+The genre of the work may provide an indication of which features are essential to the expression. In some cases, aspects of physical form, such as typeface and page layout, are not integral to the intellectual or artistic realisation of the work as such, and therefore are not distinctive criteria for the respective expressions. For another work features such as layout may be essential. For instance, the author or a graphic designer may wrap a poem around an image.
+
+An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. This does not make the contents of the aggregated expressions part of this work, but only parts of the resulting expression.
+
+If an instance of F2 Expression is of a specific form, such as text, image, etc., it may be simultaneously instantiated in the specific classes representing these forms in CIDOC CRM. Thereby one can make use of the more specific properties of these classes, such as language (which is applicable to linguistic objects only).
+
+Examples:
+The Italian text of Dante’s ‘Divina Commedia’ as found in the authoritative critical edition ‘La Commedia secondo l’antica vulgata a cura di Giorgio Petrocchi’, Milano: Mondadori, 1966-67 (= Le Opere di Dante Alighieri, Edizione Nazionale a cura della Società Dantesca Italiana, VII, 1-4) (F22)
+
+The Italian text of Dante’s ‘Inferno’ as found in the same edition (F22)
+
+Nel mezzo del cammin di nostra vita 
+mi ritrovai per una selva oscura    
+ché la diritta via era smarrita [the Italian text of the first stanza of Dante’s ‘Inferno’ and ‘Divina Commedia’] (F23)
+
+The signs which make up Christian Morgenstern’s ‘Fisches Nachtgesang’ [a poem consisting simply of “-” and “˘” signs, arranged in a determined combination] (F22)
+        """@en ;
+                                                            rdfs:label "F2 Expression"@en .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object
+<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+<http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object
+<http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E39_Actor
+<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E4_Period
+<http://www.cidoc-crm.org/cidoc-crm/E4_Period> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object
+<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E7_Activity
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Event .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object
+<http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      owl:equivalentClass :TimePoint ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      owl:disjointWith <http://www.w3.org/2006/time#ProperInterval> ;
+                                      rdfs:label "Instant"@en .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                       rdfs:label "Interval"@en .
+
+
+###  http://www.w3.org/2006/time#ProperInterval
+<http://www.w3.org/2006/time#ProperInterval> rdf:type owl:Class ;
+                                             owl:equivalentClass :TimeInterval ;
+                                             rdfs:subClassOf <http://www.w3.org/2006/time#Interval> ;
+                                             rdfs:comment "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different"@en ;
+                                             rdfs:label "Proper interval"@en .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://www.w3.org/2006/time#Instant>
+                                                                                 <http://www.w3.org/2006/time#Interval>
+                                                                               )
+                                                                 ] ;
+                                             rdfs:label "TemporalEntity"@en .
+
+
+###  https://dlnarratives.eu/ontology#ActorWithRole
+:ActorWithRole rdf:type owl:Class ;
+               rdfs:comment """This reification class was introduced to allow the assignment of a role to an actor. It represents the participation of the actor in the event.
+
+This class has to be linked to:
+• an instance of the class E5 Event, through the property hadParticipant
+• an instance of the class E39 Actor, through the property hasSubject
+• an instance of the class Role, through the property hasRole"""^^xsd:string ;
+               rdfs:label "ActorWithRole" .
+
+
+###  https://dlnarratives.eu/ontology#Alternative
+:Alternative rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+             <http://purl.org/dc/elements/1.1/description> "An alternative node has a predicate and an activity state that will be activated once the predicate is true. They are used to link the branch nodes with their alternative outgoing activity states."^^xsd:string ;
+             rdfs:label "Alternative"@en .
+
+
+###  https://dlnarratives.eu/ontology#Batching_furnace
+:Batching_furnace rdf:type owl:Class ;
+                  rdfs:subClassOf :Glass_Making_Step ;
+                  rdfs:label "Batching_furnace"@en .
+
+
+###  https://dlnarratives.eu/ontology#Beating
+:Beating rdf:type owl:Class ;
+         rdfs:subClassOf :Weaving_Activity .
+
+
+###  https://dlnarratives.eu/ontology#Bench_organization
+:Bench_organization rdf:type owl:Class ;
+                    rdfs:subClassOf :Glass_Making_Step ;
+                    rdfs:label "Bench_organization"@en .
+
+
+###  https://dlnarratives.eu/ontology#Black_Mastic
+:Black_Mastic rdf:type owl:Class ;
+              rdfs:subClassOf :Mastic ;
+              rdfs:label "Black_Mastic"@en .
+
+
+###  https://dlnarratives.eu/ontology#Blender
+:Blender rdf:type owl:Class ;
+         rdfs:subClassOf :Cooking_Device ;
+         rdfs:label "Blender"@en .
+
+
+###  https://dlnarratives.eu/ontology#Blocking
+:Blocking rdf:type owl:Class ;
+          rdfs:subClassOf :Glass_Making_Step ;
+          rdfs:label "Blocking"@en .
+
+
+###  https://dlnarratives.eu/ontology#Blowing
+:Blowing rdf:type owl:Class ;
+         rdfs:subClassOf :Glass_Making_Step ;
+         rdfs:label "Blowing"@en .
+
+
+###  https://dlnarratives.eu/ontology#Blowpipe_cleaning
+:Blowpipe_cleaning rdf:type owl:Class ;
+                   rdfs:subClassOf :Glass_Making_Step ;
+                   rdfs:label "Blowpipe_cleaning"@en .
+
+
+###  https://dlnarratives.eu/ontology#Bowl
+:Bowl rdf:type owl:Class ;
+      rdfs:subClassOf :Cooking_Device ;
+      rdfs:label "Bowl"@en .
+
+
+###  https://dlnarratives.eu/ontology#Branch
+:Branch rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+        <http://purl.org/dc/elements/1.1/description> "Branch node is a control node that accepts tokens on one incoming edge and selects one outgoing edge from one or more outgoing alternatives. They support conditional branchings."^^xsd:string ;
+        rdfs:label "Branch"@en .
+
+
+###  https://dlnarratives.eu/ontology#Bubbling
+:Bubbling rdf:type owl:Class ;
+          rdfs:subClassOf :Glass_Making_Step ;
+          rdfs:label "Bubbling"@en .
+
+
+###  https://dlnarratives.eu/ontology#Chewing_Gum_Drying
+:Chewing_Gum_Drying rdf:type owl:Class ;
+                    rdfs:subClassOf :Mastic_Activity ;
+                    rdfs:label "Chewing_Gum_Drying"@en .
+
+
+###  https://dlnarratives.eu/ontology#ChicleMixtureProduction
+:ChicleMixtureProduction rdf:type owl:Class ;
+                         rdfs:subClassOf :Mastic_Activity ;
+                         rdfs:label "ChicleMixtureProduction"@en .
+
+
+###  https://dlnarratives.eu/ontology#Classification
+:Classification rdf:type owl:Class ;
+                rdfs:subClassOf :Mastic_Activity ;
+                rdfs:label "Classification"@en .
+
+
+###  https://dlnarratives.eu/ontology#CleaningWithWater
+:CleaningWithWater rdf:type owl:Class ;
+                   rdfs:subClassOf :Mastic_Activity ;
+                   rdfs:label "CleaningWithWater"@en .
+
+
+###  https://dlnarratives.eu/ontology#Coating
+:Coating rdf:type owl:Class ;
+         rdfs:subClassOf :Mastic_Activity ;
+         rdfs:label "Coating"@en .
+
+
+###  https://dlnarratives.eu/ontology#Collecting
+:Collecting rdf:type owl:Class ;
+            rdfs:subClassOf :Mastic_Activity ;
+            rdfs:label "Collecting"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cooking_Activity_Type
+:Cooking_Activity_Type rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+                       rdfs:label "Cooking_Activity_Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cooking_Device
+:Cooking_Device rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E57_Material> ;
+                rdfs:label "Cooking_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cooking_Ingredients
+:Cooking_Ingredients rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E57_Material> ;
+                     rdfs:label "Cooking_Ingredients"@en .
+
+
+###  https://dlnarratives.eu/ontology#CoolingChicle
+:CoolingChicle rdf:type owl:Class ;
+               rdfs:subClassOf :Mastic_Activity ;
+               rdfs:label "CoolingChicle"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cosmetic_Product
+:Cosmetic_Product rdf:type owl:Class ;
+                  rdfs:subClassOf :Mastic_Product ;
+                  rdfs:label "Cosmetic_Product"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cracking_Device
+:Cracking_Device rdf:type owl:Class ;
+                 rdfs:subClassOf :Cooking_Device ;
+                 rdfs:label "Cracking_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cultivation
+:Cultivation rdf:type owl:Class ;
+             rdfs:subClassOf :Mastic_Activity ;
+             rdfs:label "Cultivation"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cutlery
+:Cutlery rdf:type owl:Class ;
+         rdfs:subClassOf :Cooking_Device ;
+         rdfs:label "Cutlery"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cutlery_Fork
+:Cutlery_Fork rdf:type owl:Class ;
+              rdfs:subClassOf :Cutlery ;
+              rdfs:label "Cutlery_Fork"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cutlery_Knife
+:Cutlery_Knife rdf:type owl:Class ;
+               rdfs:subClassOf :Cutlery ;
+               rdfs:label "Cutlery_Knife"@en .
+
+
+###  https://dlnarratives.eu/ontology#Cutlery_Spoon
+:Cutlery_Spoon rdf:type owl:Class ;
+               rdfs:subClassOf :Cutlery ;
+               rdfs:label "Cutlery_Spoon"@en .
+
+
+###  https://dlnarratives.eu/ontology#Diet_Category_Type
+:Diet_Category_Type rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+                    rdfs:label "Diet_Category_Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Distilation
+:Distilation rdf:type owl:Class ;
+             rdfs:subClassOf :Mastic_Activity ;
+             rdfs:label "Distilation"@en .
+
+
+###  https://dlnarratives.eu/ontology#Draining_Device
+:Draining_Device rdf:type owl:Class ;
+                 rdfs:subClassOf :Cooking_Device ;
+                 rdfs:label "Draining_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Drying
+:Drying rdf:type owl:Class ;
+        rdfs:subClassOf :Mastic_Activity ;
+        rdfs:label "Drying"@en .
+
+
+###  https://dlnarratives.eu/ontology#Drying_Device
+:Drying_Device rdf:type owl:Class ;
+               rdfs:subClassOf :Cooking_Device ;
+               rdfs:label "Drying_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Edible_Product
+:Edible_Product rdf:type owl:Class ;
+                rdfs:subClassOf :Mastic_Product ;
+                rdfs:label "Edible_Product"@en .
+
+
+###  https://dlnarratives.eu/ontology#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "This class represents an event. Equivalent to the CRM class E5 Event."@en ;
+       rdfs:label "Event"@en .
+
+
+###  https://dlnarratives.eu/ontology#F22_Self-Contained_Expression
+:F22_Self-Contained_Expression rdf:type owl:Class ;
+                               rdfs:subClassOf <http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> ;
+                               rdfs:comment """Scope note:
+This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole. The quality of wholeness reflects the intention of its creator that this expression should convey the concept of the work. Such a whole can in turn be part of a larger whole.
+
+Inherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. A Self-Contained Expression may contain expressions or parts of expressions from other work, such as citations or items collected in anthologies. Even though they are incorporated in the Self-Contained Expression, they are not regarded as becoming members of the expressed container work by their inclusion in the expression, but are rather regarded as foreign or referred to elements.
+
+F22 Self-Contained Expression can be distinguished from F23 Expression Fragment in that an F23 Expression Fragment was not intended by its creator to make sense by itself. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard an expression as self-contained.
+
+Examples:
+The Italian text of Dante’s ‘Inferno’ as found in the authoritative critical edition La Commedia secondo l’antica vulgata a cura di Giorgio Petrocchi, Milano: Mondadori, 1966-67 (= Le Opere di Dante Alighieri, Edizione Nazionale a cura della Società Dantesca Italiana, VII, 1-4)
+
+The musical notation of Franz Schubert’s lied known as ‘Ave Maria’
+
+The musical notation of Franz Schubert’s lieder cycle entitled ‘Seven Songs after Walter Scott’s The Lady of the Lake’, of which ‘Ave Maria’ is a distinct part
+
+The musical notation of Franz Liszt’s piano transcription of Franz Schubert’s lied known as ‘Ave Maria’
+
+The musical notation of fragments of the unfinished string quartet sketched by Arnold Schoenberg in 1926"""@en ;
+                               rdfs:label "F22 Self-Contained Expression"@en .
+
+
+###  https://dlnarratives.eu/ontology#Fabula
+:Fabula rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E4_Period> ;
+        rdfs:comment "This class represents the fabula of a narrative, i.e. the sequence of events in chronological order." ;
+        rdfs:label "Fabula" .
+
+
+###  https://dlnarratives.eu/ontology#Fertilization
+:Fertilization rdf:type owl:Class ;
+               rdfs:subClassOf :Mastic_Activity ;
+               rdfs:label "Fertilization"@en .
+
+
+###  https://dlnarratives.eu/ontology#Finishing
+:Finishing rdf:type owl:Class ;
+           rdfs:subClassOf :Glass_Making_Step ;
+           rdfs:label "Finishing"@en .
+
+
+###  https://dlnarratives.eu/ontology#Flattening
+:Flattening rdf:type owl:Class ;
+            rdfs:subClassOf :Glass_Making_Step ;
+            rdfs:label "Flattening"@en .
+
+
+###  https://dlnarratives.eu/ontology#Fork
+:Fork rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+      <http://purl.org/dc/elements/1.1/description> "Fork node is a control node that has one incoming edge and multiple outgoing edges and is used to split incoming flow into multiple concurrent flows. Fork nodes are introduced to support parallelism in activities."^^xsd:string ;
+      rdfs:label "Fork"@en .
+
+
+###  https://dlnarratives.eu/ontology#FormingGumDragees
+:FormingGumDragees rdf:type owl:Class ;
+                   rdfs:subClassOf :Mastic_Activity ;
+                   rdfs:label "FormingGumDragees"@en .
+
+
+###  https://dlnarratives.eu/ontology#Furnace_phase
+:Furnace_phase rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+               rdfs:label "Furnace_phase"@en .
+
+
+###  https://dlnarratives.eu/ontology#Furnace_type
+:Furnace_type rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+              rdfs:label "Furnace_type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Gathering
+:Gathering rdf:type owl:Class ;
+           rdfs:subClassOf :Glass_Making_Step ;
+           rdfs:label "Gathering"@en .
+
+
+###  https://dlnarratives.eu/ontology#Gathering_Type
+:Gathering_Type rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+                rdfs:label "Gathering_Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Glass_Activity
+:Glass_Activity rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+                rdfs:label "Glass_Activity"@en .
+
+
+###  https://dlnarratives.eu/ontology#Glass_Making_Step
+:Glass_Making_Step rdf:type owl:Class ;
+                   rdfs:subClassOf :Glass_Activity ;
+                   rdfs:label "Glass_Making_Step"@en .
+
+
+###  https://dlnarratives.eu/ontology#Glass_Making_Subprocess
+:Glass_Making_Subprocess rdf:type owl:Class ;
+                         rdfs:subClassOf :Glass_Activity ;
+                         rdfs:label "Glass_Making_Subprocess"@en .
+
+
+###  https://dlnarratives.eu/ontology#Glass_Product
+:Glass_Product rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+               rdfs:label "Glass_Product"@en .
+
+
+###  https://dlnarratives.eu/ontology#Glass_Tool
+:Glass_Tool rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+            rdfs:label "Glass_Tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#Gravity
+:Gravity rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+         rdfs:label "Gravity"@en .
+
+
+###  https://dlnarratives.eu/ontology#Grinding_Device
+:Grinding_Device rdf:type owl:Class ;
+                 rdfs:subClassOf :Cooking_Device ;
+                 rdfs:label "Grinding_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Hand_Tool
+:Hand_Tool rdf:type owl:Class ;
+           rdfs:subClassOf :Glass_Tool ;
+           rdfs:label "Hand_Tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#Irrigation
+:Irrigation rdf:type owl:Class ;
+            rdfs:subClassOf :Mastic_Activity ;
+            rdfs:label "Irrigation"@en .
+
+
+###  https://dlnarratives.eu/ontology#Jacking
+:Jacking rdf:type owl:Class ;
+         rdfs:subClassOf :Glass_Making_Step ;
+         rdfs:label "Jacking"@en .
+
+
+###  https://dlnarratives.eu/ontology#Join
+:Join rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+      <http://purl.org/dc/elements/1.1/description> "Join node is a control node that has multiple incoming edges and one outgoing edge and is used to synchronize incoming concurrent flows. Join nodes are introduced to support parallelism in activities."^^xsd:string ;
+      rdfs:label "Join"@en .
+
+
+###  https://dlnarratives.eu/ontology#Kendima
+:Kendima rdf:type owl:Class ;
+         rdfs:subClassOf :Mastic_Activity ;
+         rdfs:label "Kendima"@en .
+
+
+###  https://dlnarratives.eu/ontology#Kenditiri
+:Kenditiri rdf:type owl:Class ;
+           rdfs:subClassOf :Mastic_Agricultural_Tool ;
+           rdfs:label "Kenditiri"@en .
+
+
+###  https://dlnarratives.eu/ontology#Kitchen_Utensils
+:Kitchen_Utensils rdf:type owl:Class ;
+                  rdfs:subClassOf :Cooking_Device ;
+                  rdfs:label "Kitchen_Utensils"@en .
+
+
+###  https://dlnarratives.eu/ontology#Kneading_Device
+:Kneading_Device rdf:type owl:Class ;
+                 rdfs:subClassOf :Cooking_Device ;
+                 rdfs:label "Kneading_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Ladle
+:Ladle rdf:type owl:Class ;
+       rdfs:subClassOf :Kitchen_Utensils ;
+       rdfs:label "Ladle"@en .
+
+
+###  https://dlnarratives.eu/ontology#Laying
+:Laying rdf:type owl:Class ;
+        rdfs:subClassOf :Glass_Making_Step ;
+        rdfs:label "Laying"@en .
+
+
+###  https://dlnarratives.eu/ontology#Loading_Annealer
+:Loading_Annealer rdf:type owl:Class ;
+                  rdfs:subClassOf :Glass_Making_Step ;
+                  rdfs:label "Loading_Annealer"@en .
+
+
+###  https://dlnarratives.eu/ontology#Loom
+:Loom rdf:type owl:Class ;
+      rdfs:subClassOf :Weaving_Tool ;
+      rdfs:comment "Represents all type of Looms" .
+
+
+###  https://dlnarratives.eu/ontology#Loom_Beater
+:Loom_Beater rdf:type owl:Class ;
+             rdfs:subClassOf :Weaving_Tool ;
+             rdfs:comment "Represents all types of Beaters used in Looms during Weaving activities" ;
+             rdfs:label "Loom Beater"^^xsd:string .
+
+
+###  https://dlnarratives.eu/ontology#Loom_Shuttle
+:Loom_Shuttle rdf:type owl:Class ;
+              rdfs:subClassOf :Weaving_Tool ;
+              rdfs:comment "Represents all types of Shuttles used in Looms during Weaving activities" ;
+              rdfs:label "Loom Shuttle"^^xsd:string .
+
+
+###  https://dlnarratives.eu/ontology#Loom_Treadle
+:Loom_Treadle rdf:type owl:Class ;
+              rdfs:subClassOf :Weaving_Tool ;
+              rdfs:comment "Represents all types of Pedals used in Looms during Weaving activities"^^xsd:string ;
+              rdfs:label "Loom Treadle"@en .
+
+
+###  https://dlnarratives.eu/ontology#MOFragment
+:MOFragment rdf:type owl:Class ;
+            rdfs:subClassOf <http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment> ;
+            rdfs:comment "This class represents a fragment of a media object, i.e. a piece of text, video, audio or other media that is a subpart of the media object."@en ;
+            rdfs:label "MOFragment"@en .
+
+
+###  https://dlnarratives.eu/ontology#MOType
+:MOType rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+        rdfs:label "MOType"@en .
+
+
+###  https://dlnarratives.eu/ontology#MObject
+:MObject rdf:type owl:Class ;
+         rdfs:subClassOf :F22_Self-Contained_Expression ;
+         rdfs:comment "This class represents a media object, i.e. a self-contained expression that expresses the narration of a narrative. Media objects include texts, videos, audios, etc."@en ;
+         rdfs:label "MObject"@en .
+
+
+###  https://dlnarratives.eu/ontology#Marvering
+:Marvering rdf:type owl:Class ;
+           rdfs:subClassOf :Glass_Making_Step ;
+           rdfs:label "Marvering"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic
+:Mastic rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> ;
+        rdfs:label "Mastic"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Activity
+:Mastic_Activity rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+                 rdfs:label "Mastic_Activity"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Agricultural_Tool
+:Mastic_Agricultural_Tool rdf:type owl:Class ;
+                          rdfs:subClassOf :Mastic_Tool ;
+                          rdfs:label "Mastic_Agricultural_Tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Chewing_Gum_Production
+:Mastic_Chewing_Gum_Production rdf:type owl:Class ;
+                               rdfs:subClassOf :Mastic_Activity ;
+                               rdfs:label "Mastic_Chewing_Gum_Production"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Drops
+:Mastic_Drops rdf:type owl:Class ;
+              rdfs:subClassOf :Mastic ;
+              rdfs:label "Mastic_Drops"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Gum
+:Mastic_Gum rdf:type owl:Class ;
+            rdfs:subClassOf :Mastic ;
+            rdfs:label "Mastic_Gum"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Oil_Production
+:Mastic_Oil_Production rdf:type owl:Class ;
+                       rdfs:subClassOf :Mastic_Activity ;
+                       rdfs:label "Mastic_Oil_Production"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Pitta
+:Mastic_Pitta rdf:type owl:Class ;
+              rdfs:subClassOf :Mastic ;
+              rdfs:label "Mastic_Pitta"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Processing_Tool
+:Mastic_Processing_Tool rdf:type owl:Class ;
+                        rdfs:subClassOf :Mastic_Tool ;
+                        rdfs:label "Mastic_Processing_Tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Product
+:Mastic_Product rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+                rdfs:label "Mastic_Product"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Production_Tool
+:Mastic_Production_Tool rdf:type owl:Class ;
+                        rdfs:subClassOf :Mastic_Tool ;
+                        rdfs:label "Mastic_Production_Tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#Mastic_Tool
+:Mastic_Tool rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+             rdfs:label "Mastic_Tool"@en .
+
+
+###  https://dlnarratives.eu/ontology#Merge
+:Merge rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+       <http://purl.org/dc/elements/1.1/description> "Merge node is a control node that brings together multiple incoming alternate flows to accept single outgoing flow. There is no joining of tokens. Merge should not be used to synchronize concurrent flows. In any execution, only one path will be taken at a time."^^xsd:string ;
+       rdfs:label "Merge"@en .
+
+
+###  https://dlnarratives.eu/ontology#Narration
+:Narration rdf:type owl:Class ;
+           rdfs:subClassOf <http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work> ;
+           rdfs:comment "This class represents the narration of a narrative, i.e. an individual work that tells the events of the narrative through some form of media (text, video, audio, etc.)."@en .
+
+
+###  https://dlnarratives.eu/ontology#Narrative
+:Narrative rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+           rdfs:comment "This class represents a narrative." ;
+           rdfs:label "Narrative" .
+
+
+###  https://dlnarratives.eu/ontology#Necking
+:Necking rdf:type owl:Class ;
+         rdfs:subClassOf :Glass_Making_Step ;
+         rdfs:label "Necking"@en .
+
+
+###  https://dlnarratives.eu/ontology#Order_Type
+:Order_Type rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            rdfs:label "Order_Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Oven_Pan
+:Oven_Pan rdf:type owl:Class ;
+          rdfs:subClassOf :Cooking_Device ;
+          rdfs:label "Oven_Pan"@en .
+
+
+###  https://dlnarratives.eu/ontology#Overhead_Drop
+:Overhead_Drop rdf:type owl:Class ;
+               rdfs:subClassOf :Glass_Making_Step ;
+               rdfs:label "Overhead_Drop"@en .
+
+
+###  https://dlnarratives.eu/ontology#Packaging
+:Packaging rdf:type owl:Class ;
+           rdfs:subClassOf :Mastic_Activity ;
+           rdfs:label "Packaging"@en .
+
+
+###  https://dlnarratives.eu/ontology#Paddling
+:Paddling rdf:type owl:Class ;
+          rdfs:subClassOf :Glass_Making_Step ;
+          rdfs:label "Paddling"@en .
+
+
+###  https://dlnarratives.eu/ontology#Pan
+:Pan rdf:type owl:Class ;
+     rdfs:subClassOf :Cooking_Device ;
+     rdfs:label "Pan"@en .
+
+
+###  https://dlnarratives.eu/ontology#Peel
+:Peel rdf:type owl:Class ;
+      rdfs:subClassOf :Cooking_Device ;
+      rdfs:label "Peel"@en .
+
+
+###  https://dlnarratives.eu/ontology#Peeling_Device
+:Peeling_Device rdf:type owl:Class ;
+                rdfs:subClassOf :Cooking_Device ;
+                rdfs:label "Peeling_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "This class represents a person. Equivalent to the CRM class E21 Person."@en ;
+        rdfs:label "Person"@en .
+
+
+###  https://dlnarratives.eu/ontology#Pharmaceutical_Product
+:Pharmaceutical_Product rdf:type owl:Class ;
+                        rdfs:subClassOf :Mastic_Product ;
+                        rdfs:label "Pharmaceutical_Product"@en .
+
+
+###  https://dlnarratives.eu/ontology#Picking
+:Picking rdf:type owl:Class ;
+         rdfs:subClassOf :Weaving_Activity .
+
+
+###  https://dlnarratives.eu/ontology#Pilot_Type
+:Pilot_Type rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            rdfs:label "Pilot Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Pistacia_Lentiscus
+:Pistacia_Lentiscus rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> ;
+                    rdfs:label "Pistacia_Lentiscus"@en .
+
+
+###  https://dlnarratives.eu/ontology#Planting
+:Planting rdf:type owl:Class ;
+          rdfs:subClassOf :Mastic_Activity ;
+          rdfs:label "Planting"@en .
+
+
+###  https://dlnarratives.eu/ontology#Plowing
+:Plowing rdf:type owl:Class ;
+         rdfs:subClassOf :Mastic_Activity ;
+         rdfs:label "Plowing"@en .
+
+
+###  https://dlnarratives.eu/ontology#Polishing
+:Polishing rdf:type owl:Class ;
+           rdfs:subClassOf :Mastic_Activity ;
+           rdfs:label "Polishing"@en .
+
+
+###  https://dlnarratives.eu/ontology#Pot
+:Pot rdf:type owl:Class ;
+     rdfs:subClassOf :Cooking_Device ;
+     rdfs:label "Pot"@en .
+
+
+###  https://dlnarratives.eu/ontology#Preparation
+:Preparation rdf:type owl:Class ;
+             rdfs:subClassOf :Glass_Making_Step ;
+             rdfs:label "Preparation"@en .
+
+
+###  https://dlnarratives.eu/ontology#Presentation
+:Presentation rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+              rdfs:comment "A presentation is a way of presenting a narration on a device, with the possible addition of other stuff (added in separate presentation segments), like music, video, narrating voice, subtitles, images, etc."^^xsd:string ;
+              rdfs:label "Presentation"@en .
+
+
+###  https://dlnarratives.eu/ontology#Pressure_Cooker
+:Pressure_Cooker rdf:type owl:Class ;
+                 rdfs:subClassOf :Cooking_Device ;
+                 rdfs:label "Pressure_Cooker"@en .
+
+
+###  https://dlnarratives.eu/ontology#Processing
+:Processing rdf:type owl:Class ;
+            rdfs:subClassOf :Mastic_Activity ;
+            rdfs:label "Processing"@en .
+
+
+###  https://dlnarratives.eu/ontology#Prunning
+:Prunning rdf:type owl:Class ;
+          rdfs:subClassOf :Mastic_Activity ;
+          rdfs:label "Prunning"@en .
+
+
+###  https://dlnarratives.eu/ontology#Pull_The_Lip
+:Pull_The_Lip rdf:type owl:Class ;
+              rdfs:subClassOf :Glass_Making_Step ;
+              rdfs:label "Pull_The_Lip"@en .
+
+
+###  https://dlnarratives.eu/ontology#Recipe
+:Recipe rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+        rdfs:label "Recipe"@en .
+
+
+###  https://dlnarratives.eu/ontology#Recipe_Category_Type
+:Recipe_Category_Type rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+                      rdfs:label "Recipe_Category_Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Recipe_Origin_Type
+:Recipe_Origin_Type rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+                    rdfs:label "Recipe_Origin_Type"@en .
+
+
+###  https://dlnarratives.eu/ontology#Recipe_Step
+:Recipe_Step rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+             rdfs:label "Recipe_Step"@en .
+
+
+###  https://dlnarratives.eu/ontology#Refining
+:Refining rdf:type owl:Class ;
+          rdfs:subClassOf :Glass_Making_Step ;
+          rdfs:label "Refining"@en .
+
+
+###  https://dlnarratives.eu/ontology#Reheating
+:Reheating rdf:type owl:Class ;
+           rdfs:subClassOf :Glass_Making_Step ;
+           rdfs:label "Reheating"@en .
+
+
+###  https://dlnarratives.eu/ontology#Roasting_Pan
+:Roasting_Pan rdf:type owl:Class ;
+              rdfs:subClassOf :Cooking_Device ;
+              rdfs:label "Roasting_Pan"@en .
+
+
+###  https://dlnarratives.eu/ontology#Schema
+:Schema rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+        rdfs:label "Schema"@en .
+
+
+###  https://dlnarratives.eu/ontology#Schema_Step
+:Schema_Step rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+             rdfs:label "Schema_Step"@en .
+
+
+###  https://dlnarratives.eu/ontology#Shape_n_Blow
+:Shape_n_Blow rdf:type owl:Class ;
+              rdfs:subClassOf :Glass_Making_Step ;
+              rdfs:label "Shape_n_Blow"@en .
+
+
+###  https://dlnarratives.eu/ontology#Shaping
+:Shaping rdf:type owl:Class ;
+         rdfs:subClassOf :Glass_Making_Step ;
+         rdfs:label "Shaping"@en .
+
+
+###  https://dlnarratives.eu/ontology#Shedding
+:Shedding rdf:type owl:Class ;
+          rdfs:subClassOf :Weaving_Activity .
+
+
+###  https://dlnarratives.eu/ontology#Sieve
+:Sieve rdf:type owl:Class ;
+       rdfs:subClassOf :Mastic_Processing_Tool ;
+       rdfs:label "Sieve"@en .
+
+
+###  https://dlnarratives.eu/ontology#Sieving
+:Sieving rdf:type owl:Class ;
+         rdfs:subClassOf :Mastic_Activity ;
+         rdfs:label "Sieving"@en .
+
+
+###  https://dlnarratives.eu/ontology#Slotted_Ladle
+:Slotted_Ladle rdf:type owl:Class ;
+               rdfs:subClassOf :Kitchen_Utensils ;
+               rdfs:label "Slotted_Ladle"@en .
+
+
+###  https://dlnarratives.eu/ontology#SpatialRegion
+:SpatialRegion rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+               rdfs:label "SpatialRegion"@en .
+
+
+###  https://dlnarratives.eu/ontology#SpatialRegionBBox
+:SpatialRegionBBox rdf:type owl:Class ;
+                   rdfs:subClassOf :SpatialRegion ;
+                   rdfs:label "SpatialRegionBBox"@en .
+
+
+###  https://dlnarratives.eu/ontology#SpatialRegionPoint
+:SpatialRegionPoint rdf:type owl:Class ;
+                    rdfs:subClassOf :SpatialRegion ;
+                    rdfs:label "SpatialRegionPoint"@en .
+
+
+###  https://dlnarratives.eu/ontology#SpatialRegionPolygon
+:SpatialRegionPolygon rdf:type owl:Class ;
+                      rdfs:subClassOf :SpatialRegion ;
+                      rdfs:label "SpatialRegionPolygon"@en .
+
+
+###  https://dlnarratives.eu/ontology#SpatialRegionStdName
+:SpatialRegionStdName rdf:type owl:Class ;
+                      rdfs:subClassOf :SpatialRegion ;
+                      rdfs:label "SpatialRegionStdName"@en .
+
+
+###  https://dlnarratives.eu/ontology#Spatula
+:Spatula rdf:type owl:Class ;
+         rdfs:subClassOf :Kitchen_Utensils ;
+         rdfs:label "Spatula"@en .
+
+
+###  https://dlnarratives.eu/ontology#Tap_n_Chill
+:Tap_n_Chill rdf:type owl:Class ;
+             rdfs:subClassOf :Glass_Making_Step ;
+             rdfs:label "Tap_n_Chill"@en .
+
+
+###  https://dlnarratives.eu/ontology#TimeInterval
+:TimeInterval rdf:type owl:Class ;
+              rdfs:comment "This class represents a time interval. Equivalent to the CRM class E52 Time-Span and to the OWL Time class ProperInterval."@en ;
+              rdfs:label "TimeInterval"@en .
+
+
+###  https://dlnarratives.eu/ontology#TimePoint
+:TimePoint rdf:type owl:Class ;
+           rdfs:comment "This class represents a time point. Equivalent to the OWL Time class Instant."@en ;
+           rdfs:label "TimePoint"@en .
+
+
+###  https://dlnarratives.eu/ontology#Transition
+:Transition rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+            rdfs:label "Transition"@en .
+
+
+###  https://dlnarratives.eu/ontology#Trimming
+:Trimming rdf:type owl:Class ;
+          rdfs:subClassOf :Glass_Making_Step ;
+          rdfs:label "Trimming"@en .
+
+
+###  https://dlnarratives.eu/ontology#Tsimbima
+:Tsimbima rdf:type owl:Class ;
+          rdfs:subClassOf :Mastic_Activity ;
+          rdfs:label "Tsimbima"@en .
+
+
+###  https://dlnarratives.eu/ontology#Verification
+:Verification rdf:type owl:Class ;
+              rdfs:subClassOf :Glass_Making_Step ;
+              rdfs:label "Verification"@en .
+
+
+###  https://dlnarratives.eu/ontology#Weaving
+:Weaving rdf:type owl:Class ;
+         rdfs:subClassOf :Weaving_Activity .
+
+
+###  https://dlnarratives.eu/ontology#Weaving_Activity
+:Weaving_Activity rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+
+
+###  https://dlnarratives.eu/ontology#Weaving_Tool
+:Weaving_Tool rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+              rdfs:comment "This class represents all tools used in the Weaving activity" ;
+              rdfs:label "Weaving Tool"^^xsd:string .
+
+
+###  https://dlnarratives.eu/ontology#Weighting_Device
+:Weighting_Device rdf:type owl:Class ;
+                  rdfs:subClassOf :Cooking_Device ;
+                  rdfs:label "Weighting_Device"@en .
+
+
+###  https://dlnarratives.eu/ontology#Workshop_Equipment
+:Workshop_Equipment rdf:type owl:Class ;
+                    rdfs:subClassOf :Glass_Tool ;
+                    rdfs:label "Workshop_Equipment"@en .
+
+
+###  https://dlnarratives.eu/ontology#Xistiri
+:Xistiri rdf:type owl:Class ;
+         rdfs:subClassOf :Mastic_Agricultural_Tool ;
+         rdfs:label "Xistiri"@en .
+
+
+###  https://dlnarratives.eu/ontology#recipe
+:recipe rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+        rdfs:label "recipe"@en .
+
+
+###  https://dlnarratives.eu/ontology#recipe_step
+:recipe_step rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+             rdfs:label "recipe_step"@en .
+
+
+###  https://dlnarratives.eu/ontology#Presentation+Segment
+<https://dlnarratives.eu/ontology#Presentation+Segment> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
+                                                        rdfs:comment "A presentation Segment holds information about a media object, channel etc that should be used in a specific presentation at a specific point in time"^^xsd:string ;
+                                                        rdfs:label "Presentation Segment"@en .
+
+
+###  https://dlnarratives.eu/ontology#Soil+Cleaning
+<https://dlnarratives.eu/ontology#Soil+Cleaning> rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Mastic_Activity ;
+                                                 rdfs:label "Soil Cleaning"@en .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
