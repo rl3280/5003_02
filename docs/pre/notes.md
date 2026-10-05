@@ -31,3 +31,20 @@ Pseudocode with AI
 Web Prototype and Representation
 HTML/CSS/JS interaction reflecting state machine interaction
 
+That confirms QAIRT text generation works. To verify the vision path too, start interactive chat with the QAIRT model:
+
+geniex-py chat qualcomm/Qwen3-VL-4B-Instruct
+
+
+When it’s ready, type a prompt followed by the path to an image file, for example:
+
+Describe this image: C:\Users\YourName\Pictures\photo.jpg
+
+Use a real image path on your PC. Typ
+
+
+C:\Users\rlewis\.continue\config.yaml
+
+& 'C:\Users\rlewis\AppData\Local\GenieX CLI\geniex.exe' serve
+
+Local hosting on http://127.0.0.1:18181/
