@@ -8,4 +8,4 @@ Can apprenticeship be digitized?  This hypothesis is tested by the following exp
 
 This repo started in the docs/pre and then the mingei and finally ZoPD.
 From that, I decided to build schemas folder and then the ontologies.
-I worked to streamline the ontologies.md 
+The mingei could only be downloaded in .ttf, I had to convert it to .jsonld.  The AI is having problems with that.
