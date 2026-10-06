@@ -7,8 +7,9 @@ This note identifies existing CIDOC CRM and Mingei ontology terms that can help 
 - [CIDOC CRM JSON-LD context](../schemas/CIDOC_CRM_v7.1.3_JSON-LD_Context.jsonld)
 - [Mingei ontology in JSON-LD](../schemas/mingei-ontology.jsonld)
 - [Mingei ontology in Turtle](../schemas/mingei-ontology.ttl)
+- [Combined ZPD CRM/Mingei JSON-LD context](zpd-crm-mingei-context.jsonld)
 
-The CIDOC CRM file is a JSON-LD context. The Mingei JSON-LD file is an expanded ontology document, not a ready-made `@context`. Attach it as a vocabulary reference; use explicitly declared aliases in the output context. The checked-in ontology files remain the authority for available terms.
+The CIDOC CRM file is a JSON-LD context. The Mingei JSON-LD file is an expanded ontology document, not a ready-made `@context`. Attach it as a vocabulary reference; use explicitly declared aliases in the output context. The combined context file provides those aliases for the terms referenced in this note. The checked-in ontology files remain the authority for available terms.
 
 ## Useful context aliases
 
