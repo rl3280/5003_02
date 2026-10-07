@@ -25,7 +25,7 @@ When recording live, unscripted interactions between a Journeyman and Apprentice
 ```
 
 #### **Phase A: Sync & Initial Setup (10 Minutes)**
-1. **Continuous Timecode & Audio Clap**: Start both cameras recording. Before any woodworking begins, perform a clear visual and audio hands-clap in full view of both cameras. This sync point lets you correlate timecodes between the 4K Nikon master shot and the mobile phone close-ups post-shoot.
+1. **Continuous Timecode & Audio Clap**: Start both cameras recording. Make sure time stamp is embedded in the videos. Before any woodworking begins, perform a clear visual and audio hands-clap in full view of both cameras. This sync point lets you correlate timecodes between the 4K Nikon master shot and the mobile phone close-ups post-shoot.
 2. **Camera Positioning**:
    * **4K Nikon (Master View)**: Handheld in native environment. Keeps the entire bench, Journeyman, Apprentices, tools, and raw materials (`E57 Material`) in frame at all times.
    * **Phone Camera (Mobile ZPD View)**: Move around the workbench to capture **micro-gestures**: hand position on the hammer handle, saw angle adjustments, and moments where the Journeyman physically guides an apprentice's hand or points out a mistake.
