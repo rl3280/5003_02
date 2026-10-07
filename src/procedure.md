@@ -27,7 +27,7 @@ When recording live, unscripted interactions between a Journeyman and Apprentice
 #### **Phase A: Sync & Initial Setup (10 Minutes)**
 1. **Continuous Timecode & Audio Clap**: Start both cameras recording. Before any woodworking begins, perform a clear visual and audio hands-clap in full view of both cameras. This sync point lets you correlate timecodes between the 4K Nikon master shot and the mobile phone close-ups post-shoot.
 2. **Camera Positioning**:
-   * **4K Nikon (Master View)**: Fixed wide angle on a tripod. Keeps the entire bench, Journeyman, Apprentices, tools, and raw materials (`E57 Material`) in frame at all times.
+   * **4K Nikon (Master View)**: Handheld in native environment. Keeps the entire bench, Journeyman, Apprentices, tools, and raw materials (`E57 Material`) in frame at all times.
    * **Phone Camera (Mobile ZPD View)**: Move around the workbench to capture **micro-gestures**: hand position on the hammer handle, saw angle adjustments, and moments where the Journeyman physically guides an apprentice's hand or points out a mistake.
 
 #### **Phase B: Live Observation (110 Minutes)**
@@ -37,6 +37,7 @@ When recording live, unscripted interactions between a Journeyman and Apprentice
    * **Error Recovery (`cro:Alternative`)**: Spontaneous corrections, such as pulling a bent nail, re-marking wood, or adjusting grip.
    * **Parallel Actions (`cro:Fork` / `Join`)**: Journeyman holding a piece stationary while an apprentice saws or hammers.
 4. **Running Timestamp Log**: Wear a digital watch or keep a notebook to jot down rough timestamps when noticeable transitions or learning corrections occur (e.g., `14:22 - Journeyman adjusts apprentice wrist angle on hammer`).
+5. Return to Phase A and restart filming every ~15 minutes.
 
 ---
 
