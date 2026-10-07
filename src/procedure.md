@@ -125,7 +125,7 @@ Alongside each exported clip, save a structured JSON metadata file containing te
 3. **Populate Annotations CSV**: Enter clip file names, time-spans, observed actors, tools, materials, and target CrO/CRM IDs into your master CSV table (`annotations.csv`).
 
 #### **DAY 3: Visual Analysis via Qwen3-VL (Process Instance Extraction)**
-1. **Generate Prompt Payload**: Use your GitHub Python script to convert `annotations.csv` into the structured Qwen prompt referencing `@mingei-ontology.jsonld` and `@CIDOC_CRM_v7.1.3_JSON-LD_Context.jsonld`.
+1. **Generate Prompt Payload**: Use `csv2py.py` to convert `annotations.csv` into the structured Qwen prompt referencing `@mingei-ontology.jsonld` and `@CIDOC_CRM_v7.1.3_JSON-LD_Context.jsonld`.
 2. **Run Qwen3-VL-4B-Instruct**: Pass the 1 FPS clip frame sequences alongside the prompt.
 3. **Collect JSON-LD Instances**: Qwen will emit valid `cro:Process step` JSON-LD graphs representing the concrete observed events, complete with `cro:ActorWithRole`, `cro:Tool`, `E57 Material`, `E52 Time-Span`, and links to media fragments (`cro:MObject` via `cro:refersToMO`).
 
