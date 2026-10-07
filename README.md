@@ -7,7 +7,10 @@ Can apprenticeship be digitized?  This hypothesis is tested by the following exp
 5. Code HTML/CSS/JS interactive Web representation rendering of state transitions
 
 This repo started in the docs/pre and then the /mingei and finally /ZoPD.
+
 From that, I decided to build /schemas folder and then the /ontologies.
+
 The mingei could only be downloaded in .ttf, I had to convert it to .jsonld.  The AI is having problems with that.
+
 I then moved over to /src to rollout procedure for video -> clip/annotate -> strict JSON-LD prompts for Qwen3-VL-4B-Instruct ...
 
