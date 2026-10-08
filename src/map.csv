@@ -1,0 +1,15 @@
+CIDOC CRM class,Name,Mingei1,Mingei2,Mingei3,Mingei4,Mingei5
+E5,Event,Fabula,CraftingProcess,,,
+E7,Activity,Process,ProcessStep,,,
+E12,Production,,,,,
+E14,Condition Assessment,,,,,
+E16,Measurement,,,,,
+E21,Person,,,,,
+E22,Human-Made Object,Product,Tool,,,
+E25,Human-Made Feature,,,,,
+E29,Design or Procedure,ProcessSchema,ProcessSchemaStep,Workflow,,
+E34,Mark,,,,,
+E39,Actor,ActorWithRole,,,,
+E52,Time-Span,TemporalEntity,,,,
+E57,Material,RawMaterial,,,,
+E73,Information Object,Fork,Merge,Join,Branch,Alternative
