@@ -1,0 +1,6 @@
+`file_name`,`timestamp_start`,`timestamp_end`,`observed_action`,`actors`,`tools_materials`,`crm_cro_ids`
+`clip_nikon_01_000215_000228.mp4`,`00:02:15.000`,`00:02:28.000`,Apprentice hammering nail under Journeyman guidance,Journeyman (Master), Apprentice\_1 (Learner)
+
+Claw Hammer (Tool), Steel Nail (E57 Material), Wood Board (E57 Material)
+
+`cro:Process step`, `cro:ActorWithRole`, `cro:Tool`, `crm:E57_Material`, `cro:MObject`
