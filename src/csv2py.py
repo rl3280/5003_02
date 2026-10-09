@@ -2,7 +2,9 @@ import csv
 import json
 import sys
 
-def generate_qwen_prompt(csv_file_path: str, output_prompt_path: str = "qwen_prompt.txt"):
+from pathlib import Path
+
+def generate_qwen_prompt(csv_file_path: str, output_prompt_path: str | None = None):
     """
     Reads a CSV annotation file and produces a structured prompt enforcing 
     strict CIDOC CRM v7.1.3 and Mingei CrO JSON-LD output from Qwen3-VL-4B-Instruct.
@@ -12,7 +14,13 @@ def generate_qwen_prompt(csv_file_path: str, output_prompt_path: str = "qwen_pro
         reader = csv.DictReader(f)
         for row in reader:
             records.append(row)
-
+    if output_prompt_path is None:
+        file_name = records[0].get("file_name", "").strip() if records else ""
+        output_prompt_path = (
+            Path(file_name).with_suffix(".txt").name
+            if file_name
+            else "qwen_prompt.txt"
+        )
     system_prompt = """You are an expert Semantic Web and Cultural Heritage ontology engineer specializing in the Mingei Crafts Ontology (CrO) and CIDOC CRM (v7.1.3).
 Your task is to analyze the provided video clip keyframes and metadata records, and decompose them into STRICT JSON-LD output adhering to the provided contexts.
 
@@ -63,7 +71,7 @@ Your task is to analyze the provided video clip keyframes and metadata records, 
     return full_prompt_text
 
 if __name__ == "__main__":
-    if len(sys.argv) &gt; 1:
-        generate_qwen_prompt(sys.argv[11])
+    if len(sys.argv) > 1:
+        generate_qwen_prompt(sys.argv[1])
     else:
-        print("Usage: python3 csv\_to\_qwen\_prompt.py <annotations.csv>")
+        print("Usage: python csv2prompt.py <annotations.csv>")

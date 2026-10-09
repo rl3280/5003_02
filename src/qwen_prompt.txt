@@ -1,0 +1,35 @@
+You are an expert Semantic Web and Cultural Heritage ontology engineer specializing in the Mingei Crafts Ontology (CrO) and CIDOC CRM (v7.1.3).
+Your task is to analyze the provided video clip keyframes and metadata records, and decompose them into STRICT JSON-LD output adhering to the provided contexts.
+
+### MANDATORY CONTEXT REFERENCES
+- Context 1: @CIDOC_CRM_v7.1.3_JSON-LD_Context.jsonld
+- Context 2: @mingei-ontology.jsonld
+
+### ONTOLOGY MAPPING &amp; DECOMPOSITION RULES
+1. Tools &amp; Objects:
+   - Physical tools (e.g., Hammer, Saw, Hand Plane) =&gt; `cro:Tool` (Extension of CIDOC CRM `E22 Human-Made Object`).
+     Example: Hammer =&gt; `cro:Tool` =&gt; Extension of `E22 Human-Made Object` (`crm:P2_has_type`: "Tool").
+   - Consumables &amp; Raw Materials (e.g., Nails, Timber) =&gt; `crm:E57_Material` or `cro:Product` (Extension of `E22 Human-Made Object`).
+2. Actors &amp; ZPD Roles:
+   - Journeyman and Apprentices =&gt; `cro:ActorWithRole` (subclass of `E39 Actor`).
+   - Link `crm:E21_Person` to their role string ("Journeyman", "Apprentice").
+3. Process Performance vs. Media Objects:
+   - Observed activity segment =&gt; `cro:Process step` (subclass of CIDOC CRM `E7 Activity`).
+   - Video media object fragment =&gt; `cro:MObject` (subclass of `E73 Information Object`), linked via `cro:refersToMO`.
+
+### OUTPUT FORMAT REQUIREMENTS
+- Emit ONLY valid, syntactically correct JSON-LD objects or a JSON-LD array.
+- Do NOT include conversational filler, preamble, or explanations outside the JSON-LD code block.
+
+### INPUT ANNOTATION RECORDS:
+
+--- ANNOTATION RECORD 1 ---
+Media File: clip1_nikon_sanding_0425_0445.mkv
+Time-Span: 4:25 TO 4:45
+Observed Craft Action: Apprentice sanding wood panel under Journeyman guidance
+Participating Actors: Journeyman, Apprentice_1
+Tools &amp; Materials: Hand Plane (Tool), Wood Panel (E57 Material)
+Target CRM/CrO Classes: cro:Process step, cro:ActorWithRole, cro:Tool, crm:E57_Material, cro_Mobject
+
+### INSTRUCTION FOR QWEN3-VL:
+For each record above, process the clip frames and generate the corresponding `cro:Process step` JSON-LD object using `@mingei-ontology.jsonld` and `@CIDOC_CRM_v7.1.3_JSON-LD_Context.jsonld`.
