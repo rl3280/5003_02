@@ -8,9 +8,8 @@ SetNail
 
 AssessNail 
 
-   BRANCH --> If Nail Straight FORK  --> (Nondominant Hand): HoldPanel  --> JOIN --> DriveNail --> AssessNail
-
-                                         (Dominant Hand):    AlignHammer
+   BRANCH --> If Nail Straight FORK  --> (Dominant Hand):    AlignHammer --> JOIN --> DriveNail --> AssessNail 
+                                         (Nondominant Hand): HoldPanel                                          
                                                             
           --> ALTERNATIVE If Nail Crooked       --> AdjustNail --> AssessNail
                   
@@ -18,6 +17,6 @@ AssessNail
 
 DriveNail --> DownSwing --> BRANCH --> If Flush with Panel --> STOP
 
-                                       If Not Flush --> UpSwing --> DownSwing
+                                   --> ALTERNATIVE If Not Flush --> UpSwing --> DownSwing
 
-MERGE Apprentice2
+FORK Apprentice2
