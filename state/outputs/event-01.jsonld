@@ -1,0 +1,1491 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01",
+                       "@type":  "crm:E29_Design_or_Procedure",
+                       "crm:P3_has_note":  "Event 1 only: Journeyman models hammering from 00:30 to 01:05. Steps are based only on the event annotations; no connection to other events.",
+                       "cro:hasSubStep":  [
+                                              {
+                                                  "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                              },
+                                              {
+                                                  "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                              },
+                                              {
+                                                  "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                              },
+                                              {
+                                                  "@id":  "urn:5003:hammering:schema:event-01:step:unspecified"
+                                              }
+                                          ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer",
+                       "@type":  "crm:E29_Design_or_Procedure",
+                       "crm:P3_has_note":  "Align hammer (AlignHammer annotation)"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:step:backswing",
+                       "@type":  "crm:E29_Design_or_Procedure",
+                       "crm:P3_has_note":  "BackSwing"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:step:downswing",
+                       "@type":  "crm:E29_Design_or_Procedure",
+                       "crm:P3_has_note":  "DownSwing"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:step:unspecified",
+                       "@type":  "crm:E29_Design_or_Procedure",
+                       "crm:P3_has_note":  "Journeyman hammering (phase not annotated)"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:transition:alignhammer-to-backswing",
+                       "@type":  "cro:Transition",
+                       "crm:P3_has_note":  "Observed between adjacent timestamped frames with these annotation codes.",
+                       "cro:transistsFrom":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             },
+                       "cro:transistsTo":  {
+                                               "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                           }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:transition:alignhammer-to-downswing",
+                       "@type":  "cro:Transition",
+                       "crm:P3_has_note":  "Observed between adjacent timestamped frames with these annotation codes.",
+                       "cro:transistsFrom":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             },
+                       "cro:transistsTo":  {
+                                               "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                           }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:transition:backswing-to-alignhammer",
+                       "@type":  "cro:Transition",
+                       "crm:P3_has_note":  "Observed between adjacent timestamped frames with these annotation codes.",
+                       "cro:transistsFrom":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             },
+                       "cro:transistsTo":  {
+                                               "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                           }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:transition:backswing-to-downswing",
+                       "@type":  "cro:Transition",
+                       "crm:P3_has_note":  "Observed between adjacent timestamped frames with these annotation codes.",
+                       "cro:transistsFrom":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             },
+                       "cro:transistsTo":  {
+                                               "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                           }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:transition:downswing-to-alignhammer",
+                       "@type":  "cro:Transition",
+                       "crm:P3_has_note":  "Observed between adjacent timestamped frames with these annotation codes.",
+                       "cro:transistsFrom":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             },
+                       "cro:transistsTo":  {
+                                               "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                           }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:schema:event-01:transition:downswing-to-backswing",
+                       "@type":  "cro:Transition",
+                       "crm:P3_has_note":  "Observed between adjacent timestamped frames with these annotation codes.",
+                       "cro:transistsFrom":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             },
+                       "cro:transistsTo":  {
+                                               "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                           }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0053",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:53"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0049",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:49"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0105",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=01:05"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:unspecified"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:wood",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "wood"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:nails",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "nails"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Journeyman Hammering"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0030",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:30"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0041",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:41"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0059",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:59"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0037",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:37"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0102",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=01:02"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:unspecified"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0044",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:44"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0050",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:50"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:alignhammer",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "AlignHammer"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:backswing",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "BackSwing"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0054",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:54"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0033",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:33"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0045",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:45"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0034",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:34"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:unspecified"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0058",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:58"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0032",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:32"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0036",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:36"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0031",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:31"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0100",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=01:00"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:tool:hammer",
+                       "@type":  "crm:E22_Human-Made_Object",
+                       "crm:P3_has_note":  "Hammer"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0042",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:42"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0039",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:39"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0052",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:52"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0048",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:48"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0043",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:43"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0101",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=01:01"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0035",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:35"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0104",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=01:04"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:unspecified"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0051",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:51"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0046",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:46"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0040",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:40"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0038",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:38"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0056",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:56"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0047",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:downswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:47"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:downswing"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice1",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice1"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:downswing",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "DownSwing"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0057",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignhammer"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:57"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:alignhammer"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0103",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=01:03"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:unspecified"
+                                             }
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:activity:0055",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:backswing"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "frame_timestamp=00:55"
+                                           ],
+                       "cro:correspondsTo":  {
+                                                 "@id":  "urn:5003:hammering:schema:event-01:step:backswing"
+                                             }
+                   }
+               ]
+}

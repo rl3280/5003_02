@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2eee5">
+    <title>Learning in the Swing — Field Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Field Notes home">
+        <span class="wordmark-icon" aria-hidden="true">fn</span>
+        <span>FIELD NOTES <span class="wordmark-divider">/</span> CRAFT &amp; LEARNING</span>
+      </a>
+      <span class="header-meta"><span class="live-dot"></span> A VIDEO STUDY <span class="meta-divider">·</span> FIELD 01</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ZONE OF PROXIMAL DEVELOPMENT / FIELD STUDY 01</p>
+          <h1 id="page-title">Learning in<br>the <em>swing.</em></h1>
+          <p class="intro-text">A small window into how a craft skill takes shape: a journeyman nearby, an apprentice at the work, and one nail at a time.</p>
+        </div>
+        <div class="intro-note">
+          <span class="note-index">EVENT 03 · 02:41—04:15</span>
+          <p>Move through selected moments from the annotated video. Each still is a real frame; each label comes from the project’s annotation sheet.</p>
+          <span class="note-rule"></span>
+          <span class="note-foot">CARPENTRY WORKSHOP · HAMMERING NAILS</span>
+        </div>
+      </section>
+
+      <section class="study" aria-label="Explore annotated video frames">
+        <div class="study-topline">
+          <div>
+            <p class="eyebrow">OBSERVATION WINDOW</p>
+            <h2>One attempt, frame by frame</h2>
+          </div>
+          <label class="filter-control">
+            <span>SHOW</span>
+            <select id="activity-filter" aria-label="Filter frames by activity">
+              <option value="all">All moments</option>
+              <option value="apprentice">Apprentice activity</option>
+              <option value="journeyman">Journeyman activity</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="viewer-grid">
+          <section class="image-panel" aria-label="Selected source frame">
+            <div class="image-frame">
+              <img id="frame-image" src="../clips/0249.jpg" alt="">
+              <div class="image-topline">
+                <span class="image-tag"><span class="tag-dot"></span> SOURCE FRAME</span>
+                <span class="image-id" id="image-id">0249.jpg</span>
+              </div>
+              <div class="image-caption">
+                <span class="caption-label">VIDEO TIME</span>
+                <span class="caption-time" id="frame-time">02:49</span>
+              </div>
+            </div>
+            <div class="transport">
+              <button class="transport-button" id="previous-frame" type="button" aria-label="Previous frame">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg>
+              </button>
+              <button class="play-button" id="play-frames" type="button" aria-label="Play frame sequence">
+                <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z"/></svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3v14H8zm6 0h3v14h-3z"/></svg>
+                <span id="play-label">PLAY THE MOMENTS</span>
+              </button>
+              <button class="transport-button" id="next-frame" type="button" aria-label="Next frame">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg>
+              </button>
+              <span class="frame-count" id="frame-count">01 <span>/</span> 23</span>
+            </div>
+          </section>
+
+          <aside class="annotation-panel" aria-live="polite" aria-atomic="true">
+            <div class="annotation-heading">
+              <p class="eyebrow">FRAME NOTES <span id="annotation-index">01 / 23</span></p>
+              <span class="crm-badge">CRM · E7</span>
+            </div>
+            <p class="activity-label" id="activity-label">Apprentice Hammering</p>
+            <p class="annotation-context" id="annotation-context"></p>
+
+            <div class="annotation-fields">
+              <div class="field-row">
+                <span class="field-name">PROCESS PHASE</span>
+                <span class="field-value" id="phase-value"></span>
+              </div>
+              <div class="field-row">
+                <span class="field-name">CONDITION CODE</span>
+                <span class="field-value" id="condition-value"></span>
+              </div>
+              <div class="field-row">
+                <span class="field-name">ACTOR ROLE FIELD</span>
+                <span class="field-value" id="role-value"></span>
+              </div>
+            </div>
+
+            <div class="coding-note">
+              <span class="coding-note-mark" aria-hidden="true">!</span>
+              <p><strong>A note on the coding</strong><br>The CSV’s actor-role field says “Journeyman” for these frames, including those labelled “Apprentice Hammering.” This prototype preserves both labels so the discrepancy stays visible.</p>
+            </div>
+
+            <a class="source-link" href="../src/annotations.csv">VIEW THE SOURCE ANNOTATIONS <span aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-heading">
+            <p class="eyebrow">SELECTED ANNOTATED MOMENTS <span class="timeline-subtitle">· NOT EVERY FRAME IS SHOWN</span></p>
+            <span class="timeline-hint">SELECT A DOT TO EXPLORE</span>
+          </div>
+          <div class="timeline" id="timeline" role="group" aria-label="Selected frame timeline"></div>
+          <div class="timeline-scale" aria-hidden="true"><span>02:49</span><span>03:30</span><span>04:15</span></div>
+        </div>
+      </section>
+
+      <section class="reflection" aria-label="How to read this prototype">
+        <div class="reflection-mark" aria-hidden="true">↳</div>
+        <div>
+          <p class="eyebrow">A WAY OF SEEING</p>
+          <h2>From a busy workshop to a few moving parts.</h2>
+        </div>
+        <p class="reflection-copy">The annotations turn a continuous scene into people, activities, tools, conditions, and time. This little viewer makes those choices visible—and invites a closer look at what was observed, what was coded, and what remains uncertain.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AN INTERACTIVE SKETCH · BUILT FROM PROJECT ANNOTATIONS</span>
+      <span>OBSERVATION IS NOT THE SAME AS EXPLANATION</span>
+    </footer>
+  </body>
+</html>

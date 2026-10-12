@@ -1,6 +1,8 @@
 # Build the five disconnected workflow schemas
 
-This folder is prepared for a Llama-3.1-8B-Instruct synthesis run. It contains all 210 annotated frame graphs, grouped into the five events you identified. It does not contain synthesized state-machine outputs yet; those are saved under `state/outputs/` after you run Llama.
+This folder is prepared for a Llama-3.1-8B-Instruct synthesis run. It contains all 210 annotated frame graphs, grouped into the five events you identified. Event 1 has an annotation-grounded interim state machine; outputs for Events 2–5 are still pending.
+
+Event 1's `state/outputs/event-01.jsonld` was assembled from its source annotations after the Llama CLI response was found to be truncated and to include labels from other events. It contains four schema steps (AlignHammer, BackSwing, DownSwing, and phase-not-annotated), all 36 Event 1 activities linked to one step each, and six transitions observed between adjacent frames with annotated phases. It does not infer a transition across an unannotated phase. The preserved `event-01-partial.txt` is invalid diagnostic output, not JSON-LD; do not use it as a synthesis result.
 
 ## Before you start
 
@@ -9,14 +11,14 @@ This folder is prepared for a Llama-3.1-8B-Instruct synthesis run. It contains a
 3. For each run, attach:
    - `state/SYNTHESIS_RULES.md`
    - `state/ontology_reference.jsonld`
-   - the event's `state/inputs/event-NN_concrete.json` file
+   - the event's `state/inputs/event-NN_llama.jsonld` file
 4. Open the corresponding `state/prompts/run_event_NN.md`, copy its contents into Continue, and send it.
 5. Have the model return only one JSON-LD document. Save it exactly as the destination filename stated in that event prompt under `state/outputs/`.
 6. Repeat for events 01 through 05.
 7. When all five event files exist, attach those five files, `state/ontology_reference.jsonld`, and `state/prompts/combine_five_events.md` to a final Continue request. Save its JSON-LD response as `state/outputs/hammering-workflow.jsonld`.
 8. In the VS Code PowerShell terminal, run `.\state\validate_state_machine.ps1`. It checks each returned file parses as JSON, verifies every source activity has a schema correspondence, checks transition endpoints and event boundaries, and checks the combined graph if it exists.
 
-The event inputs are arrays of the original JSON-LD documents, not rewritten versions. `state/event_manifest.json` lists the source filenames, event time ranges, and frame counts.
+The original event arrays (`event-NN_concrete.json`) remain unchanged. The smaller `event-NN_llama.jsonld` files are synthesis-focused JSON-LD derivatives: they keep every concrete E7 activity, participant, tool, material, annotation code, and timestamp, while omitting visual-description notes and repetitive image/time-span support nodes. Frame IDs still identify the source image, and each activity carries its timestamp as a note. `state/event_manifest.json` lists the source filenames, event time ranges, and frame counts.
 
 ## Important modeling choices
 
