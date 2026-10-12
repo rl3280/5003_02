@@ -1,0 +1,78 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:activity:0245",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice3"
+                                                       }
+                                                   ],
+                       "crm:P4_has_time-span":  {
+                                                    "@id":  "urn:5003:hammering:timespan:0245"
+                                                },
+                       "crm:P67_refers_to":  {
+                                                 "@id":  "urn:5003:hammering:image:0245"
+                                             },
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-flush-align-panel-edges"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignboardsflush"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman/apprentice ZoPD hammering nails",
+                                               "A man in a cap and blue shirt stands at a wooden workbench with a person in a black shirt, surrounded by tools and materials in a workshop setting."
+                                           ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice3",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice3"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:timespan:0245",
+                       "@type":  "crm:E52_Time-Span",
+                       "crm:P3_has_note":  "2:45"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:image:0245",
+                       "@type":  "crm:E73_Information_Object",
+                       "crm:P3_has_note":  "0245.jpg"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:wood",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "wood"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:journeyman-flush-align-panel-edges",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Journeyman Flush Align Panel Edges"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:alignboardsflush",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "AlignBoardsFlush"
+                   }
+               ]
+}

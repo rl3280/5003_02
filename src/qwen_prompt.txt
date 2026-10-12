@@ -1,0 +1,4 @@
+Inspect the attached single JPEG. Complete the JSON-LD template below by replacing ONLY the VISUAL_OBSERVATION placeholder with one concise description of visible pixels. Do not change, remove, rename, or add any JSON keys, IDs, types, nodes, links, CSV labels, or notes. In particular, every node type key must be "@type", never "type". Preserve all relationship objects {"@id":"..."} exactly. Return ONLY the completed JSON-LD document, without Markdown or prose. If the image is unclear, replace the placeholder with "The image is unclear; no visual details can be confirmed."
+
+JSON-LD TEMPLATE (the exact annotation record and graph are already encoded below):
+__JSONLD_TEMPLATE__

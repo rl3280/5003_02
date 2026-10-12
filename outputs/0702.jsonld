@@ -1,0 +1,94 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:activity:0702",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice4"
+                                                       }
+                                                   ],
+                       "crm:P4_has_time-span":  {
+                                                    "@id":  "urn:5003:hammering:timespan:0702"
+                                                },
+                       "crm:P67_refers_to":  {
+                                                 "@id":  "urn:5003:hammering:image:0702"
+                                             },
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:apprentice-hammering"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:alignnail"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman supporting apprentice hammering a nail",
+                                               "A person wearing gloves holds a wooden box while another person stands beside them with a hammer in hand."
+                                           ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice4",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice4"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:timespan:0702",
+                       "@type":  "crm:E52_Time-Span",
+                       "crm:P3_has_note":  "7:02"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:image:0702",
+                       "@type":  "crm:E73_Information_Object",
+                       "crm:P3_has_note":  "0702.jpg"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:tool:hammer",
+                       "@type":  "crm:E22_Human-Made_Object",
+                       "crm:P3_has_note":  "Hammer"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:wood",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "wood"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:nails",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "nails"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:apprentice-hammering",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Apprentice Hammering"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:alignnail",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "AlignNail"
+                   }
+               ]
+}

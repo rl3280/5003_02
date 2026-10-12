@@ -1,0 +1,94 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:activity:0945",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice5"
+                                                       }
+                                                   ],
+                       "crm:P4_has_time-span":  {
+                                                    "@id":  "urn:5003:hammering:timespan:0945"
+                                                },
+                       "crm:P67_refers_to":  {
+                                                 "@id":  "urn:5003:hammering:image:0945"
+                                             },
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:power-drill"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-drilling"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:drill"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman models using a power drill to make a pilot hole for nail",
+                                               "A person wearing a cap and holding a drill is visible, standing beside a wooden box on a workbench."
+                                           ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice5",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice5"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:timespan:0945",
+                       "@type":  "crm:E52_Time-Span",
+                       "crm:P3_has_note":  "9:45"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:image:0945",
+                       "@type":  "crm:E73_Information_Object",
+                       "crm:P3_has_note":  "0945.jpg"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:tool:power-drill",
+                       "@type":  "crm:E22_Human-Made_Object",
+                       "crm:P3_has_note":  "Power Drill"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:wood",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "wood"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:nails",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "nails"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:journeyman-drilling",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Journeyman Drilling"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:drill",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Drill"
+                   }
+               ]
+}

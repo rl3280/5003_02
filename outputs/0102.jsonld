@@ -1,0 +1,79 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:activity:0102",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice1"
+                                                       }
+                                                   ],
+                       "crm:P4_has_time-span":  {
+                                                    "@id":  "urn:5003:hammering:timespan:0102"
+                                                },
+                       "crm:P67_refers_to":  {
+                                                 "@id":  "urn:5003:hammering:image:0102"
+                                             },
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:tool:hammer"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:wood"
+                                                            },
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman modeling correct way to hammer a nail",
+                                               "A man holds a hammer, another stands beside him, and wooden planks are visible on a workbench."
+                                           ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice1",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice1"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:timespan:0102",
+                       "@type":  "crm:E52_Time-Span",
+                       "crm:P3_has_note":  "1:02"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:image:0102",
+                       "@type":  "crm:E73_Information_Object",
+                       "crm:P3_has_note":  "0102.jpg"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:tool:hammer",
+                       "@type":  "crm:E22_Human-Made_Object",
+                       "crm:P3_has_note":  "Hammer"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:wood",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "wood"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:nails",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "nails"
+                   }
+               ]
+}

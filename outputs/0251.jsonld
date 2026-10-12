@@ -1,0 +1,78 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:activity:0251",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice3"
+                                                       }
+                                                   ],
+                       "crm:P4_has_time-span":  {
+                                                    "@id":  "urn:5003:hammering:timespan:0251"
+                                                },
+                       "crm:P67_refers_to":  {
+                                                 "@id":  "urn:5003:hammering:image:0251"
+                                             },
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-inspects-nail"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:inspectnail"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman/apprentice ZoPD hammering nails",
+                                               "A man in a green cap and blue shirt stands beside a woman in a black shirt, both focused on a woodworking project at a table."
+                                           ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice3",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice3"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:timespan:0251",
+                       "@type":  "crm:E52_Time-Span",
+                       "crm:P3_has_note":  "2:51"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:image:0251",
+                       "@type":  "crm:E73_Information_Object",
+                       "crm:P3_has_note":  "0251.jpg"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:nails",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "nails"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:journeyman-inspects-nail",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Journeyman Inspects Nail"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:inspectnail",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "InspectNail"
+                   }
+               ]
+}

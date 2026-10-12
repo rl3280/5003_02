@@ -1,0 +1,86 @@
+{
+    "@context":  {
+                     "crm":  "http://www.cidoc-crm.org/cidoc-crm/",
+                     "cro":  "https://dlnarratives.eu/ontology#"
+                 },
+    "@graph":  [
+                   {
+                       "@id":  "urn:5003:hammering:activity:0720",
+                       "@type":  "crm:E7_Activity",
+                       "crm:P11_had_participant":  [
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:journeyman"
+                                                       },
+                                                       {
+                                                           "@id":  "urn:5003:hammering:actor:apprentice4"
+                                                       }
+                                                   ],
+                       "crm:P4_has_time-span":  {
+                                                    "@id":  "urn:5003:hammering:timespan:0720"
+                                                },
+                       "crm:P67_refers_to":  {
+                                                 "@id":  "urn:5003:hammering:image:0720"
+                                             },
+                       "crm:P16_used_specific_object":  [
+                                                            {
+                                                                "@id":  "urn:5003:hammering:material:nails"
+                                                            }
+                                                        ],
+                       "crm:P2_has_type":  [
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:journeyman-inspects-nail"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:branch"
+                                               },
+                                               {
+                                                   "@id":  "urn:5003:hammering:annotation-code:inspectnail"
+                                               }
+                                           ],
+                       "crm:P3_has_note":  [
+                                               "Journeyman supporting apprentice hammering a nail",
+                                               "Two people are working on a wooden box with tools and materials visible around them."
+                                           ]
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:journeyman",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Journeyman"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:actor:apprentice4",
+                       "@type":  "crm:E21_Person",
+                       "crm:P3_has_note":  "Apprentice4"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:timespan:0720",
+                       "@type":  "crm:E52_Time-Span",
+                       "crm:P3_has_note":  "7:20"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:image:0720",
+                       "@type":  "crm:E73_Information_Object",
+                       "crm:P3_has_note":  "0720.jpg"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:material:nails",
+                       "@type":  "crm:E57_Material",
+                       "crm:P3_has_note":  "nails"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:journeyman-inspects-nail",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "Journeyman Inspects Nail"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:branch",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "branch"
+                   },
+                   {
+                       "@id":  "urn:5003:hammering:annotation-code:inspectnail",
+                       "@type":  "crm:E55_Type",
+                       "crm:P3_has_note":  "InspectNail"
+                   }
+               ]
+}
